@@ -19,3 +19,16 @@ export interface Student {
     email: string;
     pkbm_id: number;
 }
+
+export interface User {
+    id: number;
+    name: string;
+    email: string;
+    role: string;
+    pkbm_id: number | null;
+}
+
+export interface LoginResponse {
+    accessToken: string;
+    user: User;
+}

@@ -14,10 +14,13 @@ app.use(express.urlencoded({ extended: true }));
 import subjectCategoryRoutes from './routes/subjectCategoryRoutes';
 import subjectRoutes from './routes/subjectRoutes';
 import studentRoutes from './routes/studentRoutes';
+import authRoutes from './routes/authRoutes';
 
 // Routes
+app.use('/api/auth', authRoutes);
 app.use('/api/subject-categories', subjectCategoryRoutes);
 app.use('/api/subjects', subjectRoutes);
+// Temporarily public, will protect later or in respective routers
 app.use('/api/students', studentRoutes);
 
 // Basic Route
