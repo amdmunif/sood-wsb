@@ -1,0 +1,941 @@
+===Database gjmetony_sood
+
+== Table structure for table announcements
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|title|varchar(255)|No|
+|content|text|No|
+|created_at|timestamp|No|current_timestamp()
+== Dumping data for table announcements
+
+|3|Selamat datang di Website Resmi Sekolah Online Orang Dewasa (SOOD) Pemerintah Kabupaten Wonosobo!|Kami sangat antusias menyambut Anda di platform pendidikan kesetaraan yang revolusioner ini. SOOD merupakan inisiatif nyata dari Pemerintah Kabupaten Wonosobo yang dirancang khusus untuk memastikan setiap warga, terutama orang dewasa, memiliki kesempatan yang setara untuk mengakses pendidikan berkualitas dan meningkatkan kompetensi diri tanpa terkendala jarak dan waktu. Platform ini menjadi jembatan bagi Anda yang ingin mengejar pendidikan yang sempat tertunda dan meraih masa depan yang lebih cerah.
+
+Kami berkomitmen penuh untuk mewujudkan visi peningkatan kualitas Sumber Daya Manusia (SDM) di Kabupaten Wonosobo melalui jalur pendidikan yang fleksibel dan mudah dijangkau. Di SOOD, Anda akan menemukan materi pembelajaran yang relevan dan dukungan yang memadai untuk menyelesaikan program pendidikan kesetaraan. Dengan semangat kolaborasi dan dedikasi, mari kita manfaatkan fasilitas ini sebaik-baiknya demi kemajuan pribadi dan kemakmuran bersama. Selamat belajar dan mari bersama-sama meraih kesuksesan!|2025-10-25 08:13:49
+|4|Peluncuran Resmi Sekolah Online Orang Dewasa (SOOD) Kabupaten Wonosobo|Peluncuran Sekolah Online Orang Dewasa (SOOD) Pemerintah Kabupaten Wonosobo akan menjadi tonggak sejarah penting yang dijadwalkan pada hari Sabtu, 25 Oktober 2025, bertempat di lokasi bersejarah, yaitu Pendopo Kabupaten Wonosobo. Acara peluncuran ini tidak hanya menandai dimulainya operasional platform pendidikan kesetaraan daring yang dinanti-nantikan, tetapi juga merefleksikan komitmen teguh Pemerintah Kabupaten Wonosobo dalam memberikan akses pendidikan yang merata dan inklusif bagi seluruh warganya. Dihadiri oleh jajaran Forkopimda, tokoh masyarakat, dan calon peserta didik, momen ini akan menjadi deklarasi publik atas upaya kolektif dalam meningkatkan Indeks Pembangunan Manusia (IPM) daerah.
+
+Puncak acara peluncuran SOOD di Pendopo Kabupaten Wonosobo akan diisi dengan peresmian simbolis oleh Bupati Wonosobo, diikuti dengan demonstrasi interaktif mengenai fitur-fitur utama platform. Peluncuran ini diharapkan dapat menyebarkan pesan inspiratif bahwa kesempatan untuk belajar tidak pernah terbatas oleh usia maupun keterbatasan fisik. Tanggal 25 Oktober 2025 akan dicatat sebagai hari di mana Wonosobo membuka pintu bagi pendidikan yang fleksibel, berkualitas, dan mudah diakses, memberikan harapan baru bagi orang dewasa di seluruh kabupaten untuk mendapatkan ijazah kesetaraan dan meningkatkan prospek kehidupan mereka.|2025-10-25 08:17:17
+== Table structure for table grades
+
+|------
+|Column|Type|Null|Default
+|------
+|//**student_id**//|int(10)|No|
+|//**module_id**//|int(10)|No|
+|score|int(3)|No|
+|created_at|timestamp|No|current_timestamp()
+|updated_at|timestamp|No|current_timestamp()
+== Dumping data for table grades
+
+|1|3|100|2025-12-21 16:02:24|2025-12-21 16:02:24
+|1|4|90|2025-12-21 16:02:24|2025-12-21 16:02:24
+|1|5|90|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|6|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|7|60|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|8|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|9|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|10|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|11|70|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|12|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|13|80|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|14|90|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|15|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|16|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|17|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|1|18|100|2025-12-21 16:03:22|2025-12-21 16:03:22
+|3|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|3|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|4|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|4|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|5|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|5|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|6|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|6|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|7|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|7|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|8|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|8|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|9|13|50|2025-12-21 17:29:59|2025-12-21 17:29:59
+|9|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|10|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|10|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|11|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|11|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|12|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|12|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|13|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|13|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|14|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|14|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|15|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|15|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|16|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|16|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|18|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|18|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|19|13|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|19|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|20|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|20|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|21|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|21|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|22|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|22|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|23|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|23|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|25|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|25|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|26|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|26|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|27|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|27|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|28|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|28|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|29|13|40|2025-12-21 17:29:59|2025-12-21 17:29:59
+|29|14|40|2025-12-21 17:29:59|2025-12-21 17:29:59
+|30|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|30|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|31|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|31|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|32|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|32|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|33|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|33|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|34|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|34|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|35|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|35|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|36|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|36|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|37|13|30|2025-12-21 17:29:59|2025-12-21 17:29:59
+|37|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|38|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|38|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|39|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|39|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|40|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|40|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|41|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|41|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|42|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|42|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|43|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|43|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|44|13|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|44|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|45|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|45|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|46|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|46|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|47|13|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|47|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|48|13|40|2025-12-21 17:29:59|2025-12-21 17:29:59
+|48|14|40|2025-12-21 17:29:59|2025-12-21 17:29:59
+|50|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|50|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|51|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|51|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|52|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|52|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|53|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|53|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|55|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|55|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|56|13|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|56|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|57|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|57|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|58|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|58|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|59|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|59|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|60|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|60|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|61|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|61|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|63|13|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|63|14|50|2025-12-21 17:29:59|2025-12-21 17:29:59
+|64|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|64|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|65|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|67|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|67|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|68|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|68|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|69|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|69|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|70|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|70|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|71|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|71|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|72|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|72|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|73|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|73|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|74|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|74|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|76|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|76|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|77|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|77|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|78|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|78|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|79|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|79|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|80|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|80|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|81|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|81|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|82|13|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|82|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|83|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|83|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|84|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|84|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|85|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|85|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|86|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|86|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|88|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|88|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|89|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|89|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|90|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|90|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|91|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|91|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|92|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|92|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|93|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|93|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|94|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|94|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|96|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|96|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|97|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|97|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|98|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|98|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|99|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|99|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|100|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|100|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|101|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|101|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|102|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|102|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|103|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|103|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|104|13|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|104|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|105|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|105|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|106|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|106|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|107|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|107|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|108|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|108|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|109|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|109|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|110|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|110|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|111|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|111|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|112|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|112|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|113|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|113|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|114|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|114|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|116|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|116|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|117|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|117|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|118|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|118|14|50|2025-12-21 17:29:59|2025-12-21 17:29:59
+|119|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|119|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|120|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|120|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|121|13|40|2025-12-21 17:29:59|2025-12-21 17:29:59
+|121|14|50|2025-12-21 17:29:59|2025-12-21 17:29:59
+|122|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|122|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|123|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|123|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|124|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|124|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|125|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|125|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|126|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|126|14|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|127|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|127|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|128|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|128|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|129|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|129|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|130|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|130|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|131|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|131|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|132|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|132|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|134|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|134|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|135|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|135|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|136|13|50|2025-12-21 17:29:59|2025-12-21 17:29:59
+|136|14|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|137|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|137|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|138|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|138|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|139|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|139|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|140|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|140|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|141|13|40|2025-12-21 17:29:59|2025-12-21 17:29:59
+|141|14|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|142|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|142|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|143|13|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|143|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|144|13|60|2025-12-21 17:29:59|2025-12-21 17:29:59
+|144|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|145|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|145|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|146|13|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|146|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|147|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|147|14|80|2025-12-21 17:29:59|2025-12-21 17:29:59
+|148|13|70|2025-12-21 17:29:59|2025-12-21 17:29:59
+|148|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|149|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|149|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+|150|13|90|2025-12-21 17:29:59|2025-12-21 17:29:59
+|150|14|100|2025-12-21 17:29:59|2025-12-21 17:29:59
+== Table structure for table landing_page_settings
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|tinyint(1)|No|1
+|hero_title|varchar(255)|No|
+|hero_subtitle|text|Yes|NULL
+|hero_image_url|varchar(2048)|Yes|NULL
+|hero_cta_text|varchar(100)|Yes|Lihat Daftar PKBM
+|hero_cta_url|varchar(255)|Yes|/pkbm
+|about_title|varchar(255)|Yes|Tentang SOOD
+|about_content|text|Yes|NULL
+|contact_address|text|Yes|NULL
+|contact_email|varchar(255)|Yes|NULL
+|contact_phone|varchar(50)|Yes|NULL
+|logo_url|varchar(2048)|Yes|NULL
+|favicon_url|varchar(2048)|Yes|NULL
+|tutorial_pdf_url|varchar(2048)|Yes|NULL
+|tutorial_video_url|varchar(2048)|Yes|NULL
+|updated_at|timestamp|No|current_timestamp()
+== Dumping data for table landing_page_settings
+
+|1|Selamat Datang di|Sekolah Online Orang Dewasa (SOOD) &#124; Pemerintah Kabupaten Wonosobo|https://website.wonosobokab.go.id/assets/front/assets/img/breadcrumbs-bg.jpg|Lihat Daftar PKBM|/pkbm|Tentang SOOD|SOOD adalah inisiatif dari Pemerintah Kabupaten Wonosobo untuk menyediakan pendidikan kesetaraan yang mudah diakses oleh masyarakat. Kami berkomitmen untuk meningkatkan kualitas sumber daya manusia melalui pendidikan.|Jln. S. Parman, Sukoyoso, Pagerkukuh, Wonosobo|sood.wonosobo@gmail.com|085138568606|/uploads/sood_img_69007090d73d369007090.png|/uploads/sood_img_69007090d73d369007090.png|https://drive.google.com/file/d/1nS-SNSm70eadGY9-LuU6IhBcF3aqsaJb/view?usp=drive_link|https://drive.google.com/file/d/1x8fMAsXLqGuQ7hKeNNV5eaDoYqU9VALZ/view?usp=drive_link|2025-10-28 14:28:16
+== Table structure for table modules
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|name|varchar(255)|No|
+|subject_id|int(10)|No|
+|classroom_url|varchar(2048)|Yes|NULL
+== Dumping data for table modules
+
+|3|BIND-1|3|NULL
+|4|BIND-2|3|NULL
+|5|BING-1|5|NULL
+|6|BING-2|5|NULL
+|7|EKO-1|8|NULL
+|8|EKO-2|8|NULL
+|9|GEO-1|9|NULL
+|10|GEO-2|9|NULL
+|11|MTK-1|4|NULL
+|12|MTK-2|4|NULL
+|13|PABP-1|1|NULL
+|14|PABP-2|1|NULL
+|15|SEJ-1|6|NULL
+|16|SEJ-2|6|NULL
+|17|SOS-1|7|NULL
+|18|SOS-2|7|NULL
+== Table structure for table password_resets
+
+|------
+|Column|Type|Null|Default
+|------
+|//**email**//|varchar(255)|No|
+|token|varchar(255)|No|
+|created_at|timestamp|No|current_timestamp()
+== Dumping data for table password_resets
+
+|sood.wonosobo@gmail.com|d424fb5b723fed70d1872b47cf5ac3eac53ed8f26bab2107ac437b7dc27485d9|2025-10-23 00:09:02
+== Table structure for table pkbm
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|name|varchar(255)|No|
+|**npsn**|varchar(20)|Yes|NULL
+|email|varchar(255)|Yes|NULL
+|address|text|Yes|NULL
+|latitude|decimal(10,8)|Yes|NULL
+|longitude|decimal(11,8)|Yes|NULL
+|contact_person_name|varchar(255)|Yes|NULL
+|contact_person_phone|varchar(20)|Yes|NULL
+|classroom_url|varchar(2048)|Yes|NULL
+|head_name|varchar(255)|Yes|NULL
+|teacher_name|varchar(255)|Yes|NULL
+|created_at|timestamp|No|current_timestamp()
+|updated_at|timestamp|No|current_timestamp()
+== Dumping data for table pkbm
+
+|1|PKBM AL HUDA|P2964642|pkbmalhudagarung@gmail.com|Jl. Dieng No.KM 9, RT.02/RW.01, Barung, Garung, Kec. Garung, Kabupaten Wonosobo, Jawa Tengah 56353|-7.29687359|109.91999900|Ika Aprilya|081327009200|https://classroom.google.com/c/ODA0OTM2MjMxMDYw?cjc=j3hqro6i|Kepala PKBM, M.Pd|Wali Kelas, S.Pd|2025-10-23 22:04:59|2025-12-21 18:57:42
+|2|PKBM AN NIDZOM|P9998374|pkbmannidzhom23@gmail.com|Tlogo, Kec. Garung, Kabupaten Wonosobo, Jawa Tengah 56353|-7.27441029|109.92978400|Irfan Choerul Anam|085540452082|https://classroom.google.com/c/ODA0OTQyMTcxOTI3?cjc=ehn76ebo|NULL|NULL|2025-10-23 22:04:59|2025-10-28 14:30:25
+|3|PKBM BERGEMA|P9948574|bergema2001@gmail.com|Jl. Dieng, Patakbanteng, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah 56354|-7.20892546|109.92383800|Irma Khasanah|082237341188|https://classroom.google.com/c/ODA0OTQyODA1OTk3?cjc=3kkq2ykr|NULL|NULL|2025-10-23 22:04:59|2025-10-24 21:31:41
+|4|PKBM BINA ILMU|P2964616|binailmu.pkbm71@gmail.com|Jl. Kaliwiro Km.04, Mijen, Depok, Kec. Kalibawang, Kabupaten Wonosobo, Jawa Tengah 56373|-7.49842067|109.90631900|Wahyu Dwi Prasetyaningrum|085647141643|https://classroom.google.com/c/ODA0OTQyOTkzMTM1?cjc=6gnmwfkj|NULL|NULL|2025-10-23 22:04:59|2025-10-29 19:27:12
+|5|PKBM CAHAYA ILMU|P2963738|pkbmcahayailmu.sapuran@gmail.com|Dsn. Ringkuk RT. 002 RW. 007, Rimpak, Kec. Sapuran, Kabupaten Wonosobo, Jawa Tengah 56373|-7.43625325|110.02971400|Pujiyanto|082259827273|https://classroom.google.com/c/ODA0OTQyODI4NTU1?cjc=7g23bqj4|NULL|NULL|2025-10-23 22:04:59|2025-10-30 09:42:34
+|6|PKBM CATUR SAKTI|P2963425|pkbmcatursakti234@gmail.com|Jl. Dusun Wonokasihan, Wanakasihan, Sojokerto, Kec. Leksono, Kabupaten Wonosobo, Jawa Tengah 56362|-7.40287483|109.87760800|Indah Choirun Nisa|NULL|https://classroom.google.com/c/ODA0OTQyNDE3NTcx?cjc=hu4uhcmp|NULL|NULL|2025-10-23 22:04:59|2025-10-24 21:31:41
+|7|PKBM CEMERLANG|P2963717|pkbmcemerlang@gmail.com|Jl. Dieng Km.04, Sibunderan 05/04, Krasak, Kec. Mojotengah, Kab. Wonosobo Prov. Jawa Tengah 56351|-7.32680881|109.91113800|Meythria Chairun Nissa|081225220948|https://classroom.google.com/c/ODA0OTQyNTg2MDg3?cjc=wrulbtkn|NULL|NULL|2025-10-23 22:04:59|2025-10-24 21:31:41
+|8|PKBM CIPTA KARYA MANDIRI|P2963736|pkbm_ckm@yahoo.com|Pagude, Pagerkukuh, Kec. Wonosobo, Kab. Wonosobo Prov. Jawa Tengah 56314|-7.35972638|109.91026100|Rhiski Ardiar Sutikno|081510428432|https://classroom.google.com/c/ODA0OTQyMDU3MDI5?cjc=23nqq2ar|NULL|NULL|2025-10-23 22:04:59|2025-10-24 21:31:41
+|9|PKBM GELORA NUSANTARA|P2963718|genusstara05@gmail.com|Jl Raya Parakan Km 01, Pangempon Kidul, Sumberdalem, Kec. Kertek, Kabupaten Wonosobo, Jawa Tengah 56371|-7.38553798|109.96822300|Dhimas Chaeron|NULL|https://classroom.google.com/c/ODA0OTQyNDAwOTEy?cjc=r7adop3b|NULL|NULL|2025-10-23 22:04:59|2025-10-24 21:31:41
+|10|PKBM PELITA NUSANTARA|P9956855|pelitanusantara.pkbm@gmail.com|Gudang, Tlogo, Kec. Sukoharjo, Kabupaten Wonosobo, Jawa Tengah 56362|-7.36466475|109.82998400|Rini Andayani|081327226793|https://classroom.google.com/c/ODA0OTQyNzkzMTEz?cjc=2p2umu3n|NULL|NULL|2025-10-23 22:04:59|2025-10-29 19:26:34
+|11|PKBM PERINTIS|P9959834|pkbmperintis14@gmail.com|Kepyar, Gumiwang, Sukoharjo, Wonosobo Regency, Central Java 56362|-7.38219144|109.78929900|Yoga|081548204973|https://classroom.google.com/c/ODA0OTQzMDc5OTMy?cjc=hgwzs6qp|NULL|NULL|2025-10-23 22:04:59|2025-10-29 19:26:50
+|12|PKBM PROSPEK|P2964267|pkbmprospek.wsb@gmail.com|Jl. Raya Pacarmulyo, Gondang, Kec. Watumalang, Kab. Wonosobo Prov. Jawa Tengah 56352|-7.36302341|109.88409700|Ripta Antika Oktiana|081227116203|https://classroom.google.com/c/ODA0OTQyODYyMTQx?cjc=agmr24da|NULL|NULL|2025-10-23 22:04:59|2025-10-24 21:31:41
+|13|PKBM SATRIA NEGARA|P2964428|pkbmsatrianegara09@gmail.com|Jl. Raya Sayangan-Plobangan Km. 1 Banjaran, Ngadimulyo, Kec. Selomerto, Kabupaten Wonosobo, Jawa Tengah, 56361|-7.38290314|109.93841800|Suhermawan|085731453481|https://classroom.google.com/c/ODA0OTQyNjM0MTc5?cjc=w25mtsl3|NULL|NULL|2025-10-23 22:04:59|2025-10-29 20:41:45
+|14|PKBM SINDORO SUMBING|P2963739|pkbm_sindoro_sumbing@yahoo.com|Jl. Kolonel Kardjono No. 16, Wonosobo Barat, Kec. Wonosobo, Kab. Wonosobo Prov. Jawa Tengah|-7.36508328|109.90089100|Undriyah|08112999699|https://classroom.google.com/c/ODA0OTQyMTEwNTQ3?cjc=plupw2lh|NULL|NULL|2025-10-23 22:04:59|2025-10-24 21:31:41
+|15|PKBM SUMBER REZEKI|P2963555|muntaha.pkbm@gmail.com|Kusumanbaru, Ngadikusuman, Kec. Kertek, Kabupaten Wonosobo, Jawa Tengah 56371|-7.37811659|109.94809200|Sarah Amalia Nurjanah, S.M|085725541468|https://classroom.google.com/c/ODA0OTQyMDcyNTA5?cjc=iowsf3m2|NULL|NULL|2025-10-23 22:04:59|2025-10-29 20:41:19
+|16|PKBM TUNAS MANDIRI|P2964617|pkbmtunasmandiri971@gmail.com|Jl. Purworejo Km. 10, RT.03/RW.10, Gandok, Kalikajar, Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56372|-7.41218875|109.97159000|Rizky Khorina Firdausi|0895425994030|https://classroom.google.com/c/ODA0OTQyOTE5MTcw?cjc=lbhnfa2v|NULL|NULL|2025-10-23 22:04:59|2025-10-28 14:31:24
+|17|PKBM ULUL ALBAB|P2964287|pkbm.ululalbab.wonosobo@gmail.com|Purwosari, Reco, Kec. Kertek, Kabupaten Wonosobo, Jawa Tengah 56371|-7.34800744|110.02366300|Ridwan Hanafi|085876131298|https://classroom.google.com/c/ODA0OTQzMDg2MDI0?cjc=eht4kzyu|NULL|NULL|2025-10-23 22:04:59|2025-10-29 19:26:09
+|18|PKBM YASMINA|P2964265|pkbmyasmina.wsb@gmail.com|Desa Kalianget RT 03 RW 05, Kelurahan Kalianget, Kec, Wonosobo, Kab Wonosobo, Jawa Tengah 56319|-7.34124650|109.90847600|Vita Indrawati|085228253636|https://classroom.google.com/c/ODA0OTQyODgzNTU2?cjc=eze3te3u|NULL|NULL|2025-10-23 22:04:59|2025-10-24 21:31:41
+|19|SPNF SKB WONOSOBO|P9948196|spnfskb.wonosobokab@gmail.com|Jalan Mayjend Bambang Sugeng Km. 1, Pagerkukuh, Kec. Wonosobo, Kab. Wonosobo Prov. Jawa Tengah 56314|-7.36079173|109.91050300|Festi Dwijayanti|085229723641|https://classroom.google.com/c/ODA0OTQyNDEyNDc3?cjc=nffizhuk|NULL|NULL|2025-10-23 22:04:59|2025-10-30 08:18:52
+== Table structure for table students
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|**nik**|char(16)|Yes|NULL
+|name|varchar(255)|No|
+|**email**|varchar(255)|No|
+|pkbm_id|int(10)|No|
+|**user_id**|int(10)|Yes|NULL
+|created_at|timestamp|No|current_timestamp()
+|updated_at|timestamp|No|current_timestamp()
+== Dumping data for table students
+
+|1|Miftafudin|mujiyatisood@gmail.com|1|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|2|Mujiyati|miftafudinsood@gmail.com|1|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|3|Adin Maratul Chusnah|maratuladin@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|4|Afit Bariyati|afitardiansyah.com@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|5|Ahmad Hamdan Sarno|ahmadhamdansarno@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|6|Ahmad Maulana|maulanablancos01@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|7|Ahmad Tohir|tohircukur21@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|8|Ahmad Wahid|wahid.ahmad835@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|9|Ahmadi|safnasani3105@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|10|Aji Prasetyo|ajiprasetyo1227@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|11|Akhmad Chaerul Amam|santrikovlax@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|12|Ali Imron|alysaja1488@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|13|Amanda Septiana|amandanda348@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|14|Amir|shauqi060@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|15|Ani Solihah|anissolihah036@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|16|Anis Nuffaharoh|anisefendi9@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|17|Arfan Ardiansah|novitadevita294@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|18|Ari Kurniawan|ariekoerniawan26@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|19|Aripin|masbor45654@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|20|Asdodin|finifinis60@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|21|Ashuri|asshuri726@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|22|Asih Setiawati|asihsetiawati208@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|23|Barkah Setiadi|barcahsetiadi33@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|24|Basir|basirganteng96@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|25|Bayu|bayutrobucho@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|26|Bayu Familu Aji|www.ajhijiweng123@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|27|Choirul Anisah|choirulanisah84@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|28|Darmiatun|miasuprapto23@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|29|Desta Eka Irawan|desatcam62@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|30|Dewi Rosita|dewirositaaa284@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|31|Eka Saputri|ekas43553@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|32|Eko Priyono|pitontel693@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|33|Emi Susanti|emi46378@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|34|Fathul Ulil Wafi|adzkiyaannajwa@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|35|Fatma Rahayu|rahayufatma05@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|36|Fatmasari|fatmasary012@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|37|Fitriyah|fitriyahwonosobo@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|38|Fitriyani|vishalfarmha@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|39|Fuji Hastuti|tutit3584@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|40|Hendri|hendrizaqi63@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|41|Hendri Santoso|redmian699@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|42|Heti Hartini|adi275745@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|43|Ismail|ismiana90390@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|44|Jariyah|trikalisat@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|45|Kuat Setiawan|wawankajoran@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|46|Kus Amim|aminforever2015@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|47|Kusniati|c9476478@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|48|Kuwat Mustofa|kuwatmustofa12345@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|49|Latif Nur Mardianto|bocahmodif@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|50|Laura Cahyaningrum|laurracahyaningrum@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|51|Lina Astuti|chandranazhifa@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|52|Listiati|listiati52@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|53|Lulu Wahyuniati|luluwahyuni28@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|54|Luswanto|ceriaantri@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|55|Mansur Mukminin|ibdan9211@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|56|Margini|marginisomogede@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|57|Marsimin|marsimin31@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|58|Martini|donimartini158@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|59|Tukini Maesaroh|sarohaja8900@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|60|Miswanto Adi Prayogo|davirafajarprayogo@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|61|Mita Ruswanto|mitaruswanto6@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|62|Miyo Narif|rikisetiawan55@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|63|Mudrikah|duhkangmas37@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|64|Mugi Setyowati|mugisetyowati52@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|65|Muhafit|muhafit75@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|66|Muhamim|muhamimsimoh@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|67|Muhammad Sobikun|achmadalshodiqx@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|68|Mukhamad|mamad.80amad@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|69|Musarofah|mussarofah914@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|70|Musolihan Afton Husman|dantonblue8@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|71|Mutaqim|musebdm@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|72|Nanik Sugiarti|rahmanada29@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|73|Nasehudin|dhuha3258@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|74|Nasoha|nasoha446@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|75|Ngaidin|ngaidin665@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|76|Ngazis Diyaul Mualim|haziqal456@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|77|Nofikhoh|nofikhohistiawan@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|78|Novita Aditya|adityanovita879@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|79|Nur Aminah|nuraminah110491@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|80|Nur Chasanah|chasanahn360@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|81|Nur Faridah|n.farida1997@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|82|Nur Halimah|muhazzam0107@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|83|Nur Hidayaturrohman|nurhidayaturrohmann@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|84|Nur Wahidah|fly436691@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|85|Nurfatin Jumilasih|nurfatinjumi@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|86|Nuryanti|kaburikan4@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|87|Parti|rohmadani4321@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|88|Purwanti|purwanti180889@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|89|Putri Vera Oktaviani|aiyladiandra@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|90|Radiono|affanpratama0101@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|91|Rasito|defank99@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|92|Riadi|riyadiaja007@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|93|Riani Saputri|putriadiska5@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|94|Rika Amelia|ameliarika72693@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|95|Riki Martin|rikkii5778@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|96|Riska|riskasusilo32@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|97|Rizki Farihatun Hanifah|risqhanifah529@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|98|Rofik Hidayat|ropikhidayat527@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|99|Rohmad|rohmatlogo@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|100|Sabar Yanti|labiqmuamar27@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|101|Sarah Fitriastuti|sarahfitriastuti9@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|102|Sariyah|m66798413@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|103|Sigit Tugur Pratopo|sigittugur@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|104|Siska Listiyaningsih|siskalistyan@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|105|Siti Chalimah|salmaazizah454@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|106|Siti Kamilah|kamilahsiti26240@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|107|Siti Kholingatun|alsafamabela285@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|108|Siti Mardiyah|mardiyah7870@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|109|Siti Musarofah|riyadi261223@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|110|Siti Rofiqoh|rofiqiqoh67@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|111|Siti Rohana|azizahfika83@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|112|Slamet Subagyo|annaastasya11@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|113|Soiman|soiman22333@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|114|Sri Sularsih|srisularsih127@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|115|Sugeng|ahmadsugeng728@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|116|Suhatno|Interrior370@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|117|Sumiati|sumiatifahri89@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|118|Sunarti|azizahsabrina481@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|119|Supriadi|Supriadiii855@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|120|Supriyati|supriyatiiii87@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|121|Suprobo|probosaja90390@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|122|Suripti|chikaadelia966@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|123|Susana|jamilatunannfis11@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|124|Sutarni|sutarniyuna@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|125|Sutrianah|ysgvivo240@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|126|Suyatmi|yatmiecz@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|127|Taslimatun Khofiah|kulsumiaisyah@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|128|Teguh Santoso|teguh37588@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|129|Tika Lestari|tikalestary562@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|130|Tri Chotijah|fahrialhikam96@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|131|Tri Wulandari|truwulandari62@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|132|Triyati|triyatiwsb123@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|134|Turino|turinosawon@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|135|Turiyah|emansobo739@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|136|Turmanisem|naryohokyahokya@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|137|Turmiasih|asihturmi25@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|138|Turmiati|turmiati190@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|139|Untoro|untorogerot34@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|140|Uswatun Hasanah|fajriakhsin@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|141|Wahyono|wahyononurkh@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|142|Widiastuti|maktuti011@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|143|Widya Oktafiani|widiaoktaviani1993@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|144|Wiji Astuti|wijiastuti15590@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|145|Yessica Asty Ardani|yessicaardanie@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|146|Yufita Lestari|vitamaharani792@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|147|Yuli Astuti|yuliastutinaya@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|148|Yuni Astuti|yunierfan2084@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|149|Yustina Syari|dedhotajalah@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|150|Zuliyatun|yuliakafezi@gmail.com|2|NULL|2025-12-21 15:21:10|2025-12-21 15:21:10
+|157|KUN MUNAWAROH|kunmuwarah@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|158|ARIFAN|naufal1112adnan@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|159|RAHMAT HIDAYAT|rahmadhidhayat307@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|160|SULASTRI|sulastri31179@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|161|NUR SAVITA|vitaavitata69@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|162|KHAMID BURHANI|burhanhamid326@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|163|MUHAMAD AKHSIN|ahsinelhasan@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|164|MELISA|surengedekejajar@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|165|TITIN NOFIYANTI|wahtuibnu@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|166|AHMAD BAROKAH|indisusilowati@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|167|ARRISANDI|arygamzy@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|168|MEMI HIDAYATI|sarah123najma@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|169|EMI FATMAWATI|redmi7890@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|170|EFI HASTUTI|hastutievi301@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|171|KODARIYAH|kodariyah106@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|172|TEGUH SUBEKTI|teguhsubekti101010@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|173|YUSUF|yali53657@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|174|SRI LESTARI|keyzalestari06@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|175|FAIZ MILZA FAJRI|faizadrian07@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|176|SLAMET HIDAYAT|hidayatslamet51@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|177|NANANG MUSLIMIN|nanangmuslimin19@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|178|SARIFAH|ifah0023@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|179|RAHMAD|rahmatwsb96@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|180|TAUFIK|elshanum1203@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|181|HARYADI|haryadiocre96@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|182|BARIYAH|rismaa0814@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|183|ADIT TYAKURNIAWAN|aditputraseni123@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|184|TETI IRYANTO|najwashafa988@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|185|DINA LESTARI|ldina3952@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|186|ERLINA|erlinsulis84@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|187|SETYOKO PURNOMO|khouffeed@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|188|ERMAWATI|saylaaufil@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|189|MUTAKIM|mutakimtakim78@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|190|MUHAMAD ASFANUDIN|wsobo7343@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|191|RINA SETIANI|setiawanigir@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|192|SETIAWAN|iazmimaulida@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|193|AHMAD FAYAKUN|najawsb@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|194|NUR KHASANAH|azzaazmi07@gmail.com|3|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|195|AHMAD MUHDOR|ahmadmuhdor689@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|196|ETRI MUHAIMIN|etri.muhaimin@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|197|ZAENAL ARIFIN|rarbani2@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|198|MUKHLIS|mukhlishotmisayang@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|199|AHMAD MUSAFAK HIDAYAT|ahmadsafak1983@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|200|SULASTRI|keysyasya123@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|201|PARDONI|pargoniwsb@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|202|AHMAD JAPAR|jafahmad368@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|203|FATKHUL QORIB|suryaa73738@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|204|WAWAN|singkongbule7@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|205|AHMAD RONI|aahmadroni9@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|206|SASOSO|sasoso0903@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|207|FERDI SALIM|ferdysalim48@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|208|NUR NGAENI|dimaspratama1634@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|209|YANTI|ayema4377@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|210|NURWAHID|cahyazia789@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|211|ROHMAN|r4135636@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|212|SUJINAH|fikrialvi6@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|213|WAHIDUN|wahidalii136@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|214|KUSYANTI|Abizar4566@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|215|RIKI ANTO|triyantiyanti9853@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|216|SLAMET NURHOYIN|Nurkhozin4@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|217|SLAMET EKO WAHONO|ss7417496@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|218|BIRIN|candrawibawa16@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|219|NINDARSIH|wicaksananata@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|220|SITI AMINAH|rafkafaqih15@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|221|SATIMIN|qhenoes04@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|222|YAYAN|yayan112yayan@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|223|NOFIYANI|nofiyani7383@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|224|BIRUN|birun2018@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|225|YULIANTO|asleyyoung985@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|226|SUPARTI|suparti2510.com@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|228|SITI NGULWIYAH|sitingulwiyah56@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|229|MAD KHANIP|isnaeni1685@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|230|LUSI DARTI|lusidarti654@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|231|SITI ZAENAP|zaenabsiti107@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|232|AHMAD SOLEH|mbakzaen30@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|233|ISTIKHOMAH|istik0503@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|234|RATIH|ratihr852@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|235|MITA ARISTIA|mitaaristia1620@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|236|DANI SAHRUL MAJID|syahruldani784@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|237|SAIFUL MUAMAR|saifulmuamar20@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|238|BAYU PRASTIAWAN|bayuprastiawan445@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|239|YUNIATI|faezahafid@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|240|TRISNO|sutrisnouvokita@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|241|SITI FATIMAH|Fatimahsajalah10@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|242|ALWIYANI|alwiyani73636@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|243|WARDI|fatonah056@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|244|LUSIANI|r2175460@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|246|LAYUS AJI SANTOSO|ajisantoso45666@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|247|KIRMANTO|kirmantoboker13@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|248|AHMAD|arinawsb6@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|249|WAHID|wahidafandy202@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|250|MAEMUNAH|syaakirakhairulumam@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|251|BASIR|wildanmentosari@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|252|AHMAD TAUFIK|ahmadtaufikahmad816@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|254|SUNARTI|Nure79933@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|255|NAWAROH|kansafaiha101@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|256|ALFIATUN ROMADONA|Zidanraka716@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|257|NUR KHASANH|Feripur72@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|258|NENI SULASTRI|Cachaaghata@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|259|AHMAD NGABIDIN|Bidinyusi@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|260|ARIS SUANTO|Kiarazevania02@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|261|FIFI WULANDARI|Fifiadja342@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|262|RUWIYAH|Khusnanisa76@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|263|MUKAROMAH|depokkaromah@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|264|SUPRIYATI|CherylIAida141@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|265|AHMAD SUBAKIR|sitiaminahsema@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|266|JANAH|jannah9813@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|267|SAFINATUN NAJA|sn5836721@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|268|ABDULLOH|Husnihuda12345@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|269|UMI DEWIYAH|sohbimuliawan@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|270|FAIZIN|masiziin223@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|271|FATKHU ROHMAN|masdadang778@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|272|WIDODO|Widodoeza98@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|273|AHMAD MUSOIM|083878453311clg@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|274|AHMAD SIGIT RIYANTO|riyankln@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|275|MUHAMAD MUTAKIN|keeneramadhan@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|276|KHOZIMAH|hoyimahhoyimah1234@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|277|PUJI ASNIATI|asniatipuji@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|278|SODIK|msodiq30@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|279|WAHYUTI ASIH|santrioplosan9@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|280|SRI HARMINI|sriharmi960@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|281|HANINGSIH|haningsih921@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|282|MUFLIHAH|khakamfaruq@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|283|NGAHADI|yunayyudis223@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|284|WAWAT ROSILAWATI|nindywae70@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|285|TRI UTAMI|utri43356@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|286|AHMAD ARIFFUDIN|nadazea4@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|287|NGATWAN TENANG|cahsobo87@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|288|BAMBANG AFIFI|bambangavanza18@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|289|SLAMET KRISDIYANTO|lekridho.nahda@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|290|TASFIYATURISKIYATI|tasfiaturiskiyati@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|291|SUMIYATI|rizkiwsb4444@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|292|MA&#039;RIFAH|wsba1900@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|293|ENI KUSRINI|enikusrini2351@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|294|SYAMSIAH|aziskholid8@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|295|NURUL HIDAYAH|nurhid806@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|296|SRI MINDARTI|sridarty6@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|297|SLAMET EDIYANTO|amexgiggs@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|298|SALIM|mahkotajati23@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|299|RASTEM|asmayuarin@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|301|RISA FAHMI|atqia.fahmi@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|302|SUDIMAN|sudimaneleanoer@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|303|FAHMIYATI|Fahmiyati115@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|304|TRI RAHAYU|antonuciha001@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|305|ASROFUL ANAM|asroup289@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|306|MUHAMAD AGUS RIADHOH|agusriadhoh20@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|307|MURTADHO|murtadhomong@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|308|MUHAMAD MALIKHUDIN|udinsajalah1111@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|309|BANI ROHMAN|banirohman0@gmail.com|4|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|311|Achmad Choirul Muna|achmadchoirul990@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|312|Badik Wahyuhono|aulaziana5467@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|313|Sayatun|sayatun969@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|314|Siti Mutohiroh|mutohirohsiti03@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|315|Septiningsih|arshintanafla5@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|316|Yuliana|jckc68666@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|317|Nurul Hidayah|nh5871725@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|318|Endang Masriyah|ailin673838@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|319|Alfi Mutohiroh|akmaattaraihan@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|320|Faizatun Nangimah|qhaireenjezzlynzafa@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|321|Sutiyah|tyah18729@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|322|Lisnatul Nadiyah|lisnanadhiya@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|323|Hesti Ayu Bela Safira|abelsahesti@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|324|Mukhadiroh|mukhadiroh1@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|325|Rosiyah|rosiiyahnana@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|326|Supriyati|Supriyatiyati434@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|327|Nining Runita Utami|salsaaaja86@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|328|Rumidah|rumidah@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|329|Chamidin|chamidin14@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|330|Muhsanif|Irsyadalfadhil01@gmail.com|5|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|331|Nurfarhan|farhan.hc05@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|332|Budiyanto|skyflower279@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|333|Fiyanti|fiyanti93@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|334|Dadi Purwanto|dedycourrvana@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|335|Barto|bangbrata799@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|336|Chotimah|chotimah3011@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|337|Septiyanto|ito812582@gamil.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|338|Mudjiyah|mudjiyah2018@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|339|Leni Fitriana|nafnabila578@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|340|Sindy Yuliana|yudhasetyawan01@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|341|Subingah|subingah782@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|342|Waris|warisirfanudin@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|343|Rameli|pakrameli888@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|344|Sakiyo|01nduwur@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|345|Muanas|muanas742@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|346|Mira Purwati|mirapurwati20@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|347|Rhehatus Sholehah|rehatussholehah@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|348|Puja Sumedi|jogjaphone00@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|349|Muadin|Patracelly@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|350|Suparman|a70917702@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|351|Istikomah|esty1504@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|352|Ahmad Sungaib|sungepwaras@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|353|Abdullah Lutfan|akashalutfan@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|354|Siti Asiyah|piktopix378@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|355|Khasan Kholiq|sanholic7@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|356|Achmad Shofa|achmad.shofa16@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|357|Ahmad Rosim|rosimahmad91@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|358|Muadzin|abz181818@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|359|Avy Ferdiyas Soliha|ferdiyasavy@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|360|Wahyu Nur Rukun|wahyunurrukun@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|361|Yulfa Klijayanto|zulfawijayanto97@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|362|Kusmiyati|sikos2010@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|363|Tri Astuti|triastutiahnaf@gmail.com|6|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|364|FETTI ARYANINGSIH|fettyaryaningsih@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|365|ROHMAYANI|yanir6203@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|366|RAGIL OKTAVIAN MAHADIYANTO|oktavianragil88@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|367|NURYAMIN|jnow7798@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|368|AHMAD RIYANTO|ahmadriyan868@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|369|AHMAD NASIR|nasirakhmad@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|370|MUBAEDAH|Baedah385@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|371|SITI KHODIROH|sitikhadirah579@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|372|AHMAD CHAYIN|khozinahmad098@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|373|AHMAD CHOLIK|oliknob@gmailcom|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|374|BAROKAH|nakhlanadhira12@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|375|CHAMIM|Chamimaltintop7@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|376|MARYATUN|maryaitunitun@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|377|MIRFAKO|facom594866@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|378|MUHAMMAD WAHYU ALIEF SUFRIDHO|arkanabramantyab@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|379|RIZKI FIRMANSYAH|rizkyfirman748@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|380|TRIYATI|fahmansakhawiratama@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|381|USUP ROHMAN|rohmanika19@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|382|SUCI RINANTI|sucirinanti05@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|383|AHMAD FAIS|afais0984@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|384|MUHAMMAD FITRON LAELAT ASHSHIYAMA|fitronashsyama@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|385|RISTIYANTO|aquaticdestyn@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|386|ANA LIYANA|anjanisaja@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|387|ELFIATUN|elfi240798@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|388|IMRON KHUSAENI|imronkhusaini24@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|389|JAMALUDIN|jamaludinwsb123@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|390|SHOIMAH|imahpungangan@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|391|AHMAD ALFAN|ahmadalfanalfan4@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|392|AHMAD JUNAIDI|ahmadjunaidijunaidi85@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|393|MURITO|muritomurito5@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|394|ROHMATUN|rohmatun198@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|395|SUROHMAT|sanjayarohmat1981@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|396|TOFIQ CHANAFI|chanafitofiq57@gmail.com|7|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|397|SUPINGAH|azzahrariski290@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|398|NUR MUSTAFIDAH|nurorlin8@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|399|LINA|majaduhita@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|400|NURZEN|bilalwsb8@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|401|Novia Handayani|noviah443@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|402|ENY RAHAYU|@enyrahayu663|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|403|WINDI SETIONO|windisetiono93@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|404|AMINUDIN|aminudin.rafifi46@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|405|IJAH MASITOH|ijahmasitoh15@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|406|MUHAMMAD RAMDHONI|mramdhoni25@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|407|SITI KHOTIJAH|sitikhotijahkelrojokhotijah@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|408|SITI NAFISAH|nafishaafkar@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|409|SRIYATUN|mansrimansri@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|410|Nurul Laelatul K D|nurullaelatul1212@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|411|Ari Romandon|arieroman95@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|412|Soeharyono|lhamizan68@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|413|Eka Nasukron|radhintanasyauqi@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|414|Angaeta Hermin|angaeta.hermiin@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|415|Devi Asih Wijayanti|deevidevii1985@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|416|Anwari|elysapamella@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|417|M. Yasin Al Ristanto|yasinalrauf39@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|418|SITI KOTIMAH|Siti1202khotimah@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|419|IRVAN KHANIF SETYADI|@irvankhanif04@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|420|RUMIYAH|mayarumi24@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|421|RIZAL SETYO AJI|zea59261@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|422|MUSWANTI|muswanti18@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|423|MEMI MUKAROMAH|hermanboe110@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|424|YAZID RIZKI|yazidriski17@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|425|SITI KHOLIFAH|nanangkosimwsb78@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|426|KHUSNUL KHOTIMAH|aqilarainaaqila@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|427|AGUS SURONO|agusabrel166@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|428|ROBERT SETIAWAN|robertsetiawan775@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|429|KAROMAH|karomahyusup64@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|430|RUBIYATUN|rubiyatun071@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|431|TRI MULYATI|trimulyati5362@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|432|SETIYOBUDI SAEFUL MUJAB|setyabudi286@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|433|AULIA YULIYANTI|yuliyantiaulia9@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|434|ACHMAD RIDHO|achmadridho161196@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|435|ROMADHON|achmadrndr@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|436|RISQI RAHMAWAN|wawanputra9099@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|437|EKA FATIMAH|arsyirrochman@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|439|CHASANOEDIN|chasanoedin@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|440|ROFI MAHENDRA|rofimahendra20@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|441|MUHSININ|Muhsininsinin70@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|442|ISTIYANI|istiyani1337@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|443|MOFID|Mofitalby7@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+|444|MARKO|markodzorif@gmail.com|8|NULL|2025-12-21 17:57:21|2025-12-21 17:57:21
+== Table structure for table subject_categories
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|**name**|varchar(100)|No|
+|created_at|timestamp|No|current_timestamp()
+|updated_at|timestamp|No|current_timestamp()
+== Dumping data for table subject_categories
+
+|1|Wajib|2026-01-19 00:00:00|2026-01-19 00:00:00
+|2|Pilihan|2026-01-19 00:00:00|2026-01-19 00:00:00
+|3|Muatan Lokal|2026-01-19 00:00:00|2026-01-19 00:00:00
+== Table structure for table subjects
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|**name**|varchar(255)|No|
+|category_id|int(10)|Yes|NULL
+|sort_order|int(11)|Yes|0
+== Dumping data for table subjects
+
+|1|Pendidikan Agama dan Budi Pekerti|1
+|3|Bahasa Indonesia|2
+|4|Matematika|3
+|5|Bahasa Inggris|4
+|6|Sejarah|9
+|7|Sosiologi|10
+|8|Ekonomi|11
+|9|Geografi|12
+|10|Pendidikan Jasmani, Olahraga, dan Kesehatan|6
+|11|Informatika|7
+|12|Seni Budaya|5
+|13|Prakarya|8
+|14|Bahasa Jawa|13
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|name|varchar(255)|No|
+|**email**|varchar(255)|No|
+|password|varchar(255)|No|
+|role|enum(&#039;Super Admin&#039;, &#039;Admin PKBM&#039;, &#039;Peserta PKBM&#039;)|No|
+|pkbm_id|int(10)|Yes|NULL
+|created_at|timestamp|No|current_timestamp()
+|updated_at|timestamp|No|current_timestamp()
+== Dumping data for table users
+
+|2|Super Admin|sood.wonosobo@gmail.com|$2y$10$jv6lj.OeZRgsj.VAQhr0N.D3aJNN8WIipb0G3d1L/w4iDg0T4wgYS|Super Admin|NULL|2025-10-22 23:11:19|2025-10-23 00:00:28
+|3|Ika Aprilya|pkbmalhudagarung@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|1|2025-10-23 22:37:21|2025-10-23 22:37:21
+|4|Veri Rakhmawati|pkbmannidzhom23@gmail.com|$2y$10$Npn6UP2spbfvq6q4tlh57ex9yadC8I9saXT.lLFiW/wBGTqZlSlBi|Admin PKBM|2|2025-10-23 22:37:21|2025-12-21 18:02:16
+|5|Irma Khasanah|bergema2001@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|3|2025-10-23 22:37:21|2025-10-23 22:37:21
+|6|Slamet Rohman|binailmu.pkbm71@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|4|2025-10-23 22:37:21|2025-10-23 22:37:21
+|7|Pujiyanto|pkbmcahayailmu.sapuran@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|5|2025-10-23 22:37:21|2025-10-23 22:37:21
+|8|Indah Choirun Nisa|pkbmcatursakti234@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|6|2025-10-23 22:37:21|2025-10-23 22:37:21
+|9|Meythria Chairun Nissa|pkbmcemerlang@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|7|2025-10-23 22:37:21|2025-10-23 22:37:21
+|10|Rhiski Ardiar Sutikno|pkbm_ckm@yahoo.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|8|2025-10-23 22:37:21|2025-10-23 22:37:21
+|11|Dhimas Chaeron|genusstara05@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|9|2025-10-23 22:37:21|2025-10-23 22:37:21
+|12|Khamini, S.S|pelitanusantara.pkbm@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|10|2025-10-23 22:37:21|2025-10-23 22:37:21
+|13|Yoga|pkbmperintis14@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|11|2025-10-23 22:37:21|2025-10-23 22:37:21
+|14|Ripta Antika Oktiana|pkbmprospek.wsb@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|12|2025-10-23 22:37:21|2025-10-23 22:37:21
+|15|Aliefia Tiara Putri|pkbmsatrianegara09@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|13|2025-10-23 22:37:21|2025-10-23 22:37:21
+|16|Undriyah|pkbm_sindoro_sumbing@yahoo.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|14|2025-10-23 22:37:21|2025-10-23 22:37:21
+|17|Sarah Amalia Nurjanah|muntaha.pkbm@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|15|2025-10-23 22:37:21|2025-10-23 22:37:21
+|18|Panggah Arestu|pkbmtunasmandiri971@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|16|2025-10-23 22:37:21|2025-10-23 22:37:21
+|19|Ridwan Hanafi|pkbm.ululalbab.wonosobo@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|17|2025-10-23 22:37:21|2025-10-23 22:37:21
+|20|Vita Indrawati|pkbmyasmina.wsb@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|18|2025-10-23 22:37:21|2025-10-23 22:37:21
+|21|Wariyanto, M.Pd|spnfskb.wonosobokab@gmail.com|$2y$10$8.Bq/xW6n0J8t.V9L.w3b.uL2g1e0d9c8b7a6f5e4d3c2b1a|Admin PKBM|19|2025-10-23 22:37:21|2025-10-23 22:37:21

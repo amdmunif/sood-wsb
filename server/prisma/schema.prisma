@@ -1,0 +1,161 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  role      Role
+  pkbm_id   Int?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  pkbm      Pkbm?    @relation(fields: [pkbm_id], references: [id])
+  student   Student?
+
+  @@map("users")
+}
+
+enum Role {
+  Super_Admin   @map("Super Admin")
+  Admin_PKBM    @map("Admin PKBM")
+  Peserta_PKBM  @map("Peserta PKBM")
+}
+
+model Pkbm {
+  id                   Int       @id @default(autoincrement())
+  name                 String
+  npsn                 String?   @unique
+  email                String?
+  address              String?   @db.Text
+  latitude             Decimal?  @db.Decimal(10, 8)
+  longitude            Decimal?  @db.Decimal(11, 8)
+  contact_person_name  String?
+  contact_person_phone String?
+  classroom_url        String?   @db.VarChar(2048)
+  head_name            String?
+  teacher_name         String?
+  created_at           DateTime  @default(now())
+  updated_at           DateTime  @updatedAt
+
+  users    User[]
+  students Student[]
+
+  @@map("pkbm")
+}
+
+model Student {
+  id         Int      @id @default(autoincrement())
+  nik        String?  @unique @db.Char(16) // New: NIK 16 digit
+  name       String
+  email      String   @unique
+  pkbm_id    Int
+  user_id    Int?     @unique
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  pkbm   Pkbm   @relation(fields: [pkbm_id], references: [id], onDelete: Cascade)
+  user   User?  @relation(fields: [user_id], references: [id], onDelete: SetNull)
+  grades Grade[]
+
+  @@map("students")
+}
+
+model SubjectCategory {
+  id         Int      @id @default(autoincrement())
+  name       String   @unique @db.VarChar(100)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  subjects Subject[]
+
+  @@map("subject_categories")
+}
+
+model Subject {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  category_id Int?     // New: Category Relation
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  category SubjectCategory? @relation(fields: [category_id], references: [id], onDelete: SetNull)
+  modules  Module[]
+
+  @@map("subjects")
+}
+
+model Module {
+  id         Int      @id @default(autoincrement())
+  name       String
+  subject_id Int
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  subject Subject @relation(fields: [subject_id], references: [id], onDelete: Cascade)
+  grades  Grade[]
+
+  @@map("modules")
+}
+
+model Grade {
+  student_id Int
+  module_id  Int
+  score      Int      @db.UnsignedInt
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  student Student @relation(fields: [student_id], references: [id], onDelete: Cascade)
+  module  Module  @relation(fields: [module_id], references: [id], onDelete: Cascade)
+
+  @@id([student_id, module_id])
+  @@map("grades")
+}
+
+model Announcement {
+  id         Int      @id @default(autoincrement())
+  title      String
+  content    String   @db.Text
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("announcements")
+}
+
+model LandingPageSettings {
+  id                 Int      @id @default(1) @db.UnsignedTinyInt
+  hero_title         String?
+  hero_subtitle      String?  @db.Text
+  hero_image_url     String?  @db.VarChar(2048)
+  hero_cta_text      String?  @db.VarChar(100)
+  hero_cta_url       String?
+  about_title        String?
+  about_content      String?  @db.Text
+  contact_address    String?  @db.Text
+  contact_email      String?
+  contact_phone      String?
+  logo_url           String?  @db.VarChar(2048)
+  favicon_url        String?  @db.VarChar(2048)
+  tutorial_pdf_url   String?  @db.VarChar(2048)
+  tutorial_video_url String?  @db.VarChar(2048)
+  created_at         DateTime @default(now())
+  updated_at         DateTime @updatedAt
+
+  @@map("landing_page_settings")
+}
+
+// Password Resets table usually generic, but can define if needed
+model PasswordReset {
+  email      String   @id
+  token      String
+  created_at DateTime @default(now())
+
+  @@map("password_resets")
+}

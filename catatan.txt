@@ -1,0 +1,192 @@
+
+==================================================
+DOKUMEN SPESIFIKASI TEKNIS
+SEKOLAH ONLINE ORANG DEWASA (SOOD)
+==================================================
+
+Dokumen ini menjelaskan spesifikasi teknis, fitur, arsitektur, dan struktur database untuk aplikasi web Sekolah Online Orang Dewasa (SOOD).
+
+---
+### 1. PENDAHULUAN
+---
+
+Aplikasi ini adalah sistem informasi dan manajemen akademik berbasis web yang dirancang untuk menjadi platform terpusat bagi Pusat Kegiatan Belajar Masyarakat (PKBM) di Kabupaten Wonosobo. Aplikasi ini terdiri dari dua komponen utama: **Halaman Publik** untuk informasi umum dan **Panel Admin** untuk manajemen data akademik dan pengguna.
+
+-   **Tujuan**: Menyediakan platform yang efisien untuk mengelola data peserta didik, nilai, dan informasi PKBM, serta memberikan akses informasi yang mudah bagi publik dan peserta didik.
+-   **Teknologi Utama**:
+    -   **Frontend**: React (Vite), TypeScript, React Router DOM, Tailwind CSS.
+    -   **Backend**: REST API menggunakan PHP dengan koneksi ke database MySQL/MariaDB.
+    -   **Manajemen State**: React Context API.
+
+---
+### 2. FITUR PUBLIK
+---
+
+Bagian ini dapat diakses oleh semua pengunjung tanpa perlu login.
+
+-   **Halaman Beranda (`/`)**:
+    -   **Konten Dinamis**: Seluruh konten utama seperti judul hero, subjudul, gambar latar, teks "Tentang SOOD", dan informasi kontak dapat dikelola sepenuhnya oleh Super Admin melalui Panel Admin.
+    -   **Pengumuman Terbaru**: Menampilkan 3 pengumuman terakhir yang diambil dari database.
+    -   **Seksi Tutorial**: Menampilkan tombol untuk mengunduh tutorial dalam format PDF dan menonton video tutorial dari tautan eksternal (misalnya YouTube). Tautan ini dikelola oleh Super Admin.
+
+-   **Halaman Daftar PKBM (`/pkbm`)**:
+    -   Menampilkan daftar lengkap semua PKBM mitra dalam format kartu (grid 3 kolom) yang menarik secara visual.
+    -   Setiap kartu menampilkan: Nama PKBM, Alamat, dan Kontak Person.
+    -   **Fitur Interaktif**: Nomor telepon kontak akan langsung terhubung ke WhatsApp (`wa.me`), dan terdapat tombol untuk melihat lokasi PKBM di Google Maps.
+
+-   **Halaman Akses Kelas (`/akses-kelas`)**:
+    -   Menampilkan daftar PKBM dalam format kartu.
+    -   Setiap kartu memiliki tombol "Masuk Kelas" yang mengarahkan pengguna langsung ke tautan Google Classroom yang spesifik untuk PKBM tersebut.
+
+---
+### 3. FITUR PANEL ADMIN
+---
+
+-   **Otentikasi**: Login menggunakan Email dan Password dengan Role-Based Access Control (Super Admin, Admin PKBM, Peserta PKBM).
+
+-   **Fungsionalitas Pejabat PKBM**:
+    -   Setiap Unit PKBM dapat menyimpan nama **Kepala PKBM** dan **Wali Kelas**.
+    -   Data ini akan muncul secara otomatis pada bagian tanda tangan di **Cetak Raport/Transkrip**.
+
+-   **Manajemen Nilai**:
+    -   Input Nilai Manual per Mata Pelajaran.
+    -   Import Nilai massal menggunakan template Excel yang mendukung struktur kolom dinamis.
+    -   Export Nilai dalam format Matriks (Horizontal) baik PDF maupun CSV.
+
+---
+### 4. ARSITEKTUR DATABASE (MySQL/MariaDB)
+---
+
+```sql
+CREATE TABLE `pkbm` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `npsn` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `latitude` decimal(10,8) DEFAULT NULL,
+  `longitude` decimal(11,8) DEFAULT NULL,
+  `contact_person_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `contact_person_phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `classroom_url` varchar(2048) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `head_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `teacher_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `npsn` (`npsn`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `users` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `role` enum('Super Admin','Admin PKBM','Peserta PKBM') COLLATE utf8mb4_unicode_ci NOT NULL,
+  `pkbm_id` int(10) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`),
+  KEY `users_pkbm_id_foreign` (`pkbm_id`),
+  CONSTRAINT `users_pkbm_id_foreign` FOREIGN KEY (`pkbm_id`) REFERENCES `pkbm` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `students` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nik` char(16) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'NIK 16 digit',
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `pkbm_id` int(10) UNSIGNED NOT NULL,
+  `user_id` int(10) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `nik` (`nik`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `user_id` (`user_id`),
+  CONSTRAINT `students_pkbm_id_foreign` FOREIGN KEY (`pkbm_id`) REFERENCES `pkbm` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `students_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `subject_categories` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `subjects` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `category_id` int(10) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`),
+  KEY `subjects_category_id_foreign` (`category_id`),
+  CONSTRAINT `subjects_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `subject_categories` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `modules` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subject_id` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`),
+  CONSTRAINT `modules_subject_id_foreign` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `grades` (
+  `student_id` int(10) UNSIGNED NOT NULL,
+  `module_id` int(10) UNSIGNED NOT NULL,
+  `score` int(3) UNSIGNED NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`student_id`,`module_id`),
+  CONSTRAINT `grades_module_id_foreign` FOREIGN KEY (`module_id`) REFERENCES `modules` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `grades_student_id_foreign` FOREIGN KEY (`student_id`) REFERENCES `students` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `announcements` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `landing_page_settings` (
+  `id` tinyint(1) UNSIGNED NOT NULL DEFAULT 1,
+  `hero_title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hero_subtitle` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hero_image_url` varchar(2048) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hero_cta_text` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hero_cta_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `about_title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `about_content` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `contact_address` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `contact_email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `contact_phone` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `logo_url` varchar(2048) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `favicon_url` varchar(2048) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tutorial_pdf_url` varchar(2048) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tutorial_video_url` varchar(2048) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+---
+### 5. ALUR KERJA DEPLOYMENT
+---
+- Build Frontend: `npm run build`
+- Upload isi folder `dist` ke `public_html`
+- Upload folder `api` (file PHP) ke `public_html/api`
+- Pastikan izin folder `uploads` adalah 755.
+==================================================
