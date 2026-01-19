@@ -49,6 +49,7 @@ Frontend runs on `http://localhost:5173`.
 - Add repository secrets:
   - `HOST`: Your cPanel domain or IP
   - `USERNAME`: cPanel username
+  - `PORT`: SSH Port (e.g., 6401)
   - `SSH_KEY`: Private SSH Key (authorized in cPanel)
 
 ### 3. Deploy
