@@ -64,6 +64,7 @@ jobs:
           port: ${{ secrets.PORT }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
+            source /home/gjmetony/nodevenv/sood-v2/server/24/bin/activate
             cd ~/sood-v2/server
             # Depending on how cPanel restarts, often touching the restart.txt or package.json triggers it
             touch tmp/restart.txt
