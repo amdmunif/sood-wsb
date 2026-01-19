@@ -37,6 +37,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
           source: "client/dist"
           target: "/home/${{ secrets.USERNAME }}/public_html"
           strip_components: 2
@@ -47,6 +48,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
           source: "server/dist,server/package.json,server/package-lock.json,server/prisma"
           target: "/home/${{ secrets.USERNAME }}/sood-v2/server"
           strip_components: 1
@@ -57,6 +59,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
           script: |
             cd ~/sood-v2/server
             # Depending on how cPanel restarts, often touching the restart.txt or package.json triggers it
