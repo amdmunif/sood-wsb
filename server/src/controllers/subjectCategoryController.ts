@@ -35,7 +35,7 @@ export const createSubjectCategory = async (req: Request, res: Response) => {
         res.status(201).json(category);
     } catch (error) {
         if (error instanceof z.ZodError) {
-            return res.status(400).json({ error: error.errors });
+            return res.status(400).json({ error: error.issues });
         }
         res.status(500).json({ error: 'Failed to create category' });
     }
@@ -47,7 +47,7 @@ export const updateSubjectCategory = async (req: Request, res: Response) => {
         const { name } = categorySchema.parse(req.body);
 
         const category = await prisma.subjectCategory.update({
-            where: { id: parseInt(id) },
+            where: { id: parseInt(id as string) },
             data: { name },
         });
 
@@ -62,7 +62,7 @@ export const deleteSubjectCategory = async (req: Request, res: Response) => {
         const { id } = req.params;
 
         await prisma.subjectCategory.delete({
-            where: { id: parseInt(id) },
+            where: { id: parseInt(id as string) },
         });
 
         res.json({ message: 'Category deleted successfully' });
