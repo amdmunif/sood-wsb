@@ -5,6 +5,16 @@ import PKBMListPublic from './pages/PKBMListPublic';
 import ClassAccess from './pages/ClassAccess';
 import SubjectCategories from './pages/SubjectCategories';
 import Subjects from './pages/Subjects';
+import AdminDashboard from './pages/AdminDashboard';
+import UserManagement from './pages/UserManagement';
+import PKBMManagement from './pages/PKBMManagement';
+import AnnouncementManagement from './pages/AnnouncementManagement';
+import LandingSettingsPage from './pages/LandingSettings';
+import PKBMLayout from './components/PKBMLayout';
+import PKBMDashboard from './pages/pkbm/PKBMDashboard';
+import StudentManagement from './pages/pkbm/StudentManagement';
+import GradeInput from './pages/pkbm/GradeInput';
+import Reports from './pages/pkbm/Reports';
 
 import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -27,9 +37,27 @@ function App() {
               <AdminLayout />
             </ProtectedRoute>
           }>
-            <Route index element={<Navigate to="/admin/categories" replace />} />
+            <Route index element={<Navigate to="/admin/dashboard" replace />} />
+            <Route path="dashboard" element={<AdminDashboard />} />
+            <Route path="users" element={<UserManagement />} />
+            <Route path="pkbm" element={<PKBMManagement />} />
             <Route path="categories" element={<SubjectCategories />} />
             <Route path="subjects" element={<Subjects />} />
+            <Route path="announcements" element={<AnnouncementManagement />} />
+            <Route path="landing" element={<LandingSettingsPage />} />
+          </Route>
+
+          {/* Admin PKBM Routes */}
+          <Route path="/admin-pkbm" element={
+            <ProtectedRoute allowedRoles={['Admin PKBM']}>
+              <PKBMLayout />
+            </ProtectedRoute>
+          }>
+            <Route index element={<Navigate to="/admin-pkbm/dashboard" replace />} />
+            <Route path="dashboard" element={<PKBMDashboard />} />
+            <Route path="students" element={<StudentManagement />} />
+            <Route path="grades" element={<GradeInput />} />
+            <Route path="reports" element={<Reports />} />
           </Route>
         </Routes>
       </AuthProvider>

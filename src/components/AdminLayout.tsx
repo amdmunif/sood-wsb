@@ -4,9 +4,13 @@ const AdminLayout: React.FC = () => {
     const location = useLocation();
 
     const navItems = [
-        { path: '/categories', label: 'Kategori Mapel' },
-        { path: '/subjects', label: 'Mata Pelajaran' },
-        // Add other links as needed
+        { path: '/admin/dashboard', label: 'Dashboard' },
+        { path: '/admin/pkbm', label: 'Manajemen PKBM' },
+        { path: '/admin/users', label: 'Manajemen Pengguna' },
+        { path: '/admin/categories', label: 'Kategori Mapel' },
+        { path: '/admin/subjects', label: 'Mata Pelajaran' },
+        { path: '/admin/announcements', label: 'Pengumuman' },
+        { path: '/admin/landing', label: 'Pengaturan Web' },
     ];
 
     return (
