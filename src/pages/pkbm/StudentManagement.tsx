@@ -20,6 +20,13 @@ const StudentManagement: React.FC = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        // Validate NIK
+        if (formData.nik && (formData.nik.length !== 16 || !/^\d+$/.test(formData.nik))) {
+            alert('NIK harus terdiri dari 16 digit angka.');
+            return;
+        }
+
         try {
             if (formData.id) {
                 await studentService.update(formData.id, formData);

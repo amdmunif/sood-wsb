@@ -86,11 +86,17 @@ switch ($method) {
     case 'PUT':
         try {
             $data = json_decode(file_get_contents('php://input'), true);
-            if (empty($data['id']) || empty($data['name']) || empty($data['email']))
+            if (empty($data['id']) || empty($data['name']))
                 throw new Exception("Data tidak lengkap.");
 
-            $stmt = $pdo->prepare("UPDATE students SET name=?, email=? WHERE id=?");
-            $stmt->execute([$data['name'], $data['email'], $data['id']]);
+            $stmt = $pdo->prepare("UPDATE students SET name=?, email=?, nik=?, nis=? WHERE id=?");
+            $stmt->execute([
+                $data['name'],
+                $data['email'] ?? null,
+                $data['nik'] ?? null,
+                $data['nis'] ?? null, // In case manual override allowed, but mostly for consistency
+                $data['id']
+            ]);
 
             ob_clean();
             sendResponse(['message' => 'Data peserta didik diperbarui']);
