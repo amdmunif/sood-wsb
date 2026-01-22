@@ -1,6 +1,6 @@
 <?php
 // Pengaturan CORS agar Frontend React bisa memanggil API ini
-header("Access-Control-Allow-Origin: *"); 
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 header("Content-Type: application/json; charset=UTF-8");
@@ -17,17 +17,22 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // --- KONFIGURASI DATABASE ---
-$host = 'localhost';
-$db   = 'gjmetony_sood'; 
-$user = 'gjmetony_sood';  
-$pass = 'm(7;Sp0PA3aD8d'; 
+// Coba load dari config.php jika ada (untuk development lokal)
+if (file_exists(__DIR__ . '/config.php')) {
+    include_once __DIR__ . '/config.php';
+}
+
+$host = defined('DB_HOST') ? DB_HOST : getenv('DB_HOST');
+$db = defined('DB_NAME') ? DB_NAME : getenv('DB_NAME');
+$user = defined('DB_USER') ? DB_USER : getenv('DB_USER');
+$pass = defined('DB_PASS') ? DB_PASS : getenv('DB_PASS');
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
+    PDO::ATTR_EMULATE_PREPARES => false,
 ];
 
 try {
@@ -39,7 +44,8 @@ try {
 }
 
 // Helper untuk mengirim response JSON
-function sendResponse($data, $code = 200) {
+function sendResponse($data, $code = 200)
+{
     http_response_code($code);
     echo json_encode($data);
     exit;

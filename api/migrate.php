@@ -4,7 +4,14 @@
 
 include_once __DIR__ . '/db.php';
 
-$secretKey = 'RAHASIA'; // Ganti dengan key yang aman atau hapus file ini setelah dipakai
+// Coba load dari config.php jika ada
+if (file_exists(__DIR__ . '/config.php')) {
+    include_once __DIR__ . '/config.php';
+}
+
+$secretKey = defined('MIGRATION_KEY') ? MIGRATION_KEY : getenv('MIGRATION_KEY');
+if (!$secretKey)
+    $secretKey = 'RAHASIA_DEFAULT';
 
 if (!isset($_GET['key']) || $_GET['key'] !== $secretKey) {
     die('Akses ditolak.');
