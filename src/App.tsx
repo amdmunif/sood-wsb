@@ -30,7 +30,9 @@ function App() {
       try {
         const settings = await landingService.getSettings();
         if (settings) {
-          document.title = settings.hero_title || 'SOOD Wonosobo';
+          // Prefer settings title, but fallback to specific request if settings empty or just use the specific one if user insists
+          // User requested: "SOOD Wonosobo | Sekolah Online Orang Dewasa"
+          document.title = settings.hero_title ? `${settings.hero_title} | SOOD Wonosobo` : 'SOOD Wonosobo | Sekolah Online Orang Dewasa';
           if (settings.favicon_url) {
             const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
             if (link) {
