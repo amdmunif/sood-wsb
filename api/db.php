@@ -16,6 +16,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 
 // Mulai session untuk login
 if (session_status() === PHP_SESSION_NONE) {
+    // Set cookie parameters to support cross-site/same-site consistently
+    $cookieParams = session_get_cookie_params();
+    session_set_cookie_params([
+        'lifetime' => 86400, // 1 day
+        'path' => '/',
+        'domain' => '', // Current domain
+        'secure' => true, // Always secure (HTTPS)
+        'httponly' => true,
+        'samesite' => 'None' // Critical for cross-origin or strict browser policies
+    ]);
     session_start();
 }
 
