@@ -1,8 +1,11 @@
 <?php
 // Pengaturan CORS agar Frontend React bisa memanggil API ini
-header("Access-Control-Allow-Origin: *");
+// Allow requests from any origin, but echoing back the origin is safer for credentials
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+header("Access-Control-Allow-Origin: $origin");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
+header("Access-Control-Allow-Credentials: true");
 header("Content-Type: application/json; charset=UTF-8");
 
 // Handle preflight request (OPTIONS)

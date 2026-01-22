@@ -19,8 +19,34 @@ import Reports from './pages/pkbm/Reports';
 import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
+import { useEffect } from 'react';
+import { landingService } from './services/landingService';
+import { API_BASE_URL } from './services/api';
 
 function App() {
+  // Update Favicon and Title based on settings
+  useEffect(() => {
+    const updateBranding = async () => {
+      try {
+        const settings = await landingService.getSettings();
+        if (settings) {
+          document.title = settings.hero_title || 'SOOD Wonosobo';
+          if (settings.favicon_url) {
+            const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+            if (link) {
+              link.href = settings.favicon_url.startsWith('http')
+                ? settings.favicon_url
+                : `${API_BASE_URL}${settings.favicon_url}`;
+            }
+          }
+        }
+      } catch (e) {
+        console.error("Failed to load branding", e);
+      }
+    };
+    updateBranding();
+  }, []);
+
   return (
     <Router>
       <AuthProvider>

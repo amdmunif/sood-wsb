@@ -21,6 +21,10 @@ export const authService = {
 
     checkSession: async (): Promise<User> => {
         const response = await api.get<User>('/check_session.php');
+        // If 204 or empty string, treat as not logged in
+        if (response.status === 204 || !response.data) {
+            throw new Error('No session');
+        }
         return response.data;
     }
 };
