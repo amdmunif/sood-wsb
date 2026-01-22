@@ -21,13 +21,13 @@ jobs:
       - name: Build Project
         run: npm run build
         
-      - name: Deploy to Hosting via SSH
-        uses: easingthemes/ssh-deploy@main
+      - name: Deploy to Hosting via SCP
+        uses: appleboy/scp-action@master
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          REMOTE_PORT: 6401
-          SOURCE: "dist/"
-          TARGET: "dev.sood-wsb.my.id/"
-          ARGS: "-rltgoDzvO"
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 6401
+          source: "dist/*"
+          target: "dev.sood-wsb.my.id"
+          strip_components: 1
