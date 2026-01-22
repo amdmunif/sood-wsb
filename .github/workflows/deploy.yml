@@ -1,89 +1,32 @@
-name: Deploy to cPanel
+name: Deploy SOOD
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-
-      - name: Install and Build Client
-        working-directory: ./client
-        run: |
-          npm ci
-          npm run build
-
-      - name: Install Server Dependencies and Build
-        working-directory: ./server
-        run: |
-          npm ci
-          npm run build
-          npx prisma generate
-
-      - name: Deploy Client to cPanel (public_html)
-        uses: appleboy/scp-action@master
+          node-version: '20'
+          
+      - name: Install Dependencies
+        run: npm ci
+        
+      - name: Build Project
+        run: npm run build
+        
+      - name: Deploy to Hosting via SSH
+        uses: easingthemes/ssh-deploy@main
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.PORT }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          source: "client/dist"
-          target: "/home/${{ secrets.USERNAME }}/public_html"
-          strip_components: 2
-
-      - name: Deploy Server to cPanel (~/sood-v2/server)
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.PORT }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          source: "server/dist,server/package.json,server/package-lock.json,server/prisma"
-          target: "/home/${{ secrets.USERNAME }}/sood-v2/server"
-          strip_components: 1
-
-      - name: Deploy Prisma Libs to Temp Folder
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.PORT }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          source: "server/node_modules/.prisma,server/node_modules/@prisma"
-          target: "/home/${{ secrets.USERNAME }}/sood-v2/server/prisma_temp"
-          strip_components: 2
-
-      - name: Restart Node.js App
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.PORT }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          script: |
-            # Move Prisma libs from temp to node_modules (handling cross-device links)
-            mkdir -p ~/sood-v2/server/node_modules
-            rm -rf ~/sood-v2/server/node_modules/.prisma ~/sood-v2/server/node_modules/@prisma
-            cp -r ~/sood-v2/server/prisma_temp/.prisma ~/sood-v2/server/node_modules/
-            cp -r ~/sood-v2/server/prisma_temp/@prisma ~/sood-v2/server/node_modules/
-            rm -rf ~/sood-v2/server/prisma_temp
-
-            source /home/gjmetony/nodevenv/sood-v2/server/24/bin/activate
-            cd ~/sood-v2/server
-            # Depending on how cPanel restarts, often touching the restart.txt or package.json triggers it
-            touch tmp/restart.txt
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          SOURCE: "dist/"
+          TARGET: "dev.sood-wsb.my.id/"
+          ARGS: "-rltgoDzvO"

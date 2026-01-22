@@ -1,0 +1,246 @@
+[22-Oct-2025 15:54:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/gjmetony/public_html/api/landing_settings.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/gjmetony/public_html/api/landing_settings.php on line 36
+[22-Oct-2025 15:54:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/gjmetony/public_html/api/landing_settings.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/gjmetony/public_html/api/landing_settings.php on line 36
+[22-Oct-2025 15:54:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/gjmetony/public_html/api/landing_settings.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/gjmetony/public_html/api/landing_settings.php on line 36
+[22-Oct-2025 17:00:40 UTC] RESET PASSWORD LINK for sood.wonosobo@gmail.com: https://sood-wsb.my.id/reset-password?token=56325fb20185a173aca4d0382df7d006ae0dedb9b042b9b6a23d8feb48922223
+[22-Oct-2025 17:00:56 UTC] RESET PASSWORD LINK for sood.wonosobo@gmail.com: https://sood-wsb.my.id/reset-password?token=0809d1feabc6208d74b9b163e19e9d5622ea7eea4abf0ec4fc70171b2a43821a
+[22-Oct-2025 17:09:02 UTC] RESET PASSWORD LINK for sood.wonosobo@gmail.com: https://sood-wsb.my.id/reset-password?token=d424fb5b723fed70d1872b47cf5ac3eac53ed8f26bab2107ac437b7dc27485d9
+[09-Nov-2025 09:25:08 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/gjmetony/public_html/api/db.php on line 10
+[21-Dec-2025 09:17:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sarohaja8900@gmail.com' for key 'email' in /home/gjmetony/public_html/api/students.php:32
+Stack trace:
+#0 /home/gjmetony/public_html/api/students.php(32): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/gjmetony/public_html/api/students.php on line 32
+[21-Dec-2025 09:18:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sarohaja8900@gmail.com' for key 'email' in /home/gjmetony/public_html/api/students.php:32
+Stack trace:
+#0 /home/gjmetony/public_html/api/students.php(32): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/gjmetony/public_html/api/students.php on line 32
+[21-Dec-2025 10:09:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sarohaja8900@gmail.com' for key 'email' in /home/gjmetony/public_html/api/students.php:32
+Stack trace:
+#0 /home/gjmetony/public_html/api/students.php(32): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/gjmetony/public_html/api/students.php on line 32
+[21-Dec-2025 11:46:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:46:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:46:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:46:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:46:37 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:46:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:46:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:46:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:46:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:46:44 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:46:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:46:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:46:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:46:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:46:45 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:24 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:32 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:34 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:36 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:38 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:45 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:47 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:51 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:47:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:47:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:47:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:47:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:47:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:48:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:48:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:48:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:48:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:48:02 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:48:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:48:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:48:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:48:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/students.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:48:03 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:48:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:48:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:48:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:48:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:48:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[21-Dec-2025 11:51:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[21-Dec-2025 11:51:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[21-Dec-2025 11:51:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[21-Dec-2025 11:51:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/pkbm.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[21-Dec-2025 11:51:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:12 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:15 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:17 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:18 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:26 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:32 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:17:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:17:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:17:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:17:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:17:42 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:20:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:20:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:20:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:20:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:20:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:20:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:20:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:20:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:20:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:20:41 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:20:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:20:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:20:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:20:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:20:42 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:20:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:20:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:20:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:20:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:20:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:20:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:20:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:20:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:20:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:20:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:20:51 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:21:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:21:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:21:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:21:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:21:26 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
+[22-Dec-2025 07:21:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 3
+[22-Dec-2025 07:21:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 4
+[22-Dec-2025 07:21:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 5
+[22-Dec-2025 07:21:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gjmetony/public_html/api/subjects.php:1) in /home/gjmetony/public_html/api/db.php on line 6
+[22-Dec-2025 07:21:29 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/gjmetony/public_html/api/db.php on line 16
