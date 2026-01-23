@@ -85,62 +85,62 @@ const AdminDashboard: React.FC = () => {
             {/* Stats Cards */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {/* PKBM Count */}
-                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-200 shadow-xl">
+                <div className="bg-black/20 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:bg-black/30 transition-all duration-200 shadow-lg group">
                     <div className="flex items-center justify-between mb-4">
-                        <div className="p-3 bg-blue-500/20 rounded-xl">
-                            <BuildingLibraryIcon className="h-6 w-6 text-blue-300" />
+                        <div className="p-3 bg-blue-500/20 rounded-xl group-hover:bg-blue-500/30 transition-colors">
+                            <BuildingLibraryIcon className="h-6 w-6 text-blue-300 group-hover:text-blue-200" />
                         </div>
                         <span className="px-2 py-1 text-xs font-semibold bg-green-500/20 text-green-300 rounded-full border border-green-500/30">
                             Mitra Aktif
                         </span>
                     </div>
-                    <p className="text-blue-200 text-sm font-medium">UNIT PKBM</p>
+                    <p className="text-blue-100/70 text-sm font-medium">UNIT PKBM</p>
                     <p className="text-3xl font-extrabold text-white mt-1">{stats.total_pkbm || 19}</p>
                 </div>
 
                 {/* Student Count */}
-                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-200 shadow-xl">
+                <div className="bg-black/20 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:bg-black/30 transition-all duration-200 shadow-lg group">
                     <div className="flex items-center justify-between mb-4">
-                        <div className="p-3 bg-green-500/20 rounded-xl">
+                        <div className="p-3 bg-green-500/20 rounded-xl group-hover:bg-green-500/30 transition-colors">
                             <div className="h-6 w-6 text-green-300 flex items-center justify-center font-bold">W</div>
                         </div>
                         <span className="px-2 py-1 text-xs font-semibold bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">
                             Peserta Aktif
                         </span>
                     </div>
-                    <p className="text-blue-200 text-sm font-medium">WARGA BELAJAR</p>
+                    <p className="text-blue-100/70 text-sm font-medium">WARGA BELAJAR</p>
                     <p className="text-3xl font-extrabold text-white mt-1">{stats.total_students}</p>
                 </div>
 
                 {/* Performance Index */}
-                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-200 shadow-xl">
+                <div className="bg-black/20 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:bg-black/30 transition-all duration-200 shadow-lg group">
                     <div className="flex items-center justify-between mb-4">
-                        <div className="p-3 bg-orange-500/20 rounded-xl">
-                            <UsersIcon className="h-6 w-6 text-orange-300" />
+                        <div className="p-3 bg-orange-500/20 rounded-xl group-hover:bg-orange-500/30 transition-colors">
+                            <UsersIcon className="h-6 w-6 text-orange-300 group-hover:text-orange-200" />
                         </div>
                         <span className="px-2 py-1 text-xs font-semibold bg-orange-500/20 text-orange-300 rounded-full border border-orange-500/30">
                             Target 80+
                         </span>
                     </div>
-                    <p className="text-blue-200 text-sm font-medium">INDEKS PRESTASI</p>
+                    <p className="text-blue-100/70 text-sm font-medium">INDEKS PRESTASI</p>
                     <p className="text-3xl font-extrabold text-white mt-1">{stats.average_grade.toFixed(1)}</p>
                 </div>
 
                 {/* Total Account */}
-                <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-200 shadow-xl">
+                <div className="bg-black/20 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:bg-black/30 transition-all duration-200 shadow-lg group">
                     <div className="flex items-center justify-between mb-4">
-                        <div className="p-3 bg-cyan-500/20 rounded-xl">
-                            <UserGroupIcon className="h-6 w-6 text-cyan-300" />
+                        <div className="p-3 bg-cyan-500/20 rounded-xl group-hover:bg-cyan-500/30 transition-colors">
+                            <UserGroupIcon className="h-6 w-6 text-cyan-300 group-hover:text-cyan-200" />
                         </div>
                     </div>
-                    <p className="text-blue-200 text-sm font-medium">TOTAL AKUN</p>
+                    <p className="text-blue-100/70 text-sm font-medium">TOTAL AKUN</p>
                     <p className="text-3xl font-extrabold text-white mt-1">{stats.total_users}</p>
                 </div>
             </div>
 
             {/* Visualisasi Capaian */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div className="lg:col-span-2 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-xl">
+                <div className="lg:col-span-2 bg-black/20 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-xl">
                     <h3 className="text-lg font-bold text-white mb-6">Performa PKBM Tertinggi</h3>
                     <Bar options={chartOptions} data={chartData} />
                 </div>

@@ -39,7 +39,7 @@ const LandingPage: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-brand-900 via-brand-700 to-indigo-900 flex flex-col font-sans">
+        <div className="min-h-screen bg-linear-to-br from-gray-900 via-brand-900 to-indigo-950 flex flex-col font-sans">
             <Navbar />
 
             {/* Hero Section */}
@@ -60,7 +60,7 @@ const LandingPage: React.FC = () => {
                     <div className="mt-10 flex justify-center gap-4">
                         <Link
                             to={settings?.hero_cta_url || '/pkbm'}
-                            className="inline-block bg-white text-blue-700 font-bold py-4 px-8 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] hover:bg-blue-50 transition-all transform hover:-translate-y-1"
+                            className="inline-block bg-white text-blue-900 font-bold py-4 px-8 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] hover:bg-blue-50 transition-all transform hover:-translate-y-1"
                         >
                             {settings?.hero_cta_text || 'Lihat Daftar PKBM'}
                         </Link>
@@ -80,9 +80,9 @@ const LandingPage: React.FC = () => {
                     <h2 className="text-3xl font-extrabold text-white mb-8 text-center">Pengumuman Terbaru</h2>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {announcements.map((ann) => (
-                            <div key={ann.id} className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
-                                <h3 className="text-xl font-bold text-white mb-2">{ann.title}</h3>
-                                <p className="text-blue-100 line-clamp-3 text-sm">{ann.content}</p>
+                            <div key={ann.id} className="bg-black/20 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-white/10 hover:bg-black/30 transition-all group">
+                                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">{ann.title}</h3>
+                                <p className="text-blue-100/80 line-clamp-3 text-sm">{ann.content}</p>
                                 <div className="mt-4 text-xs text-blue-300 font-mono">
                                     {new Date(ann.created_at).toLocaleDateString('id-ID', { dateStyle: 'full' })}
                                 </div>
@@ -93,14 +93,14 @@ const LandingPage: React.FC = () => {
             )}
 
             {/* About Section */}
-            <div className="py-20 bg-black/10 backdrop-blur-sm">
+            <div className="py-20 bg-black/20 backdrop-blur-sm border-y border-white/5">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
                         <h2 className="text-sm text-blue-300 font-bold tracking-widest uppercase mb-2">Tentang Kami</h2>
                         <p className="text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl mb-6">
                             {settings?.about_title || 'Apa itu SOOD?'}
                         </p>
-                        <p className="max-w-3xl text-lg text-blue-100 mx-auto leading-relaxed">
+                        <p className="max-w-3xl text-lg text-blue-100/90 mx-auto leading-relaxed">
                             {settings?.about_content || 'Platform pembelajaran online untuk pendidikan kesetaraan di Kabupaten Wonosobo.'}
                         </p>
                     </div>
@@ -117,7 +117,7 @@ const LandingPage: React.FC = () => {
                                 href={getImageUrl(settings.tutorial_pdf_url)}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="flex items-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl hover:bg-white/20 transition-all group"
+                                className="flex items-center space-x-3 bg-white/5 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl hover:bg-white/15 transition-all group"
                             >
                                 <svg className="w-6 h-6 text-red-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                                 <span className="font-semibold">Download PDF Panduan</span>
@@ -128,7 +128,7 @@ const LandingPage: React.FC = () => {
                                 href={settings.tutorial_video_url}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="flex items-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl hover:bg-white/20 transition-all group"
+                                className="flex items-center space-x-3 bg-white/5 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl hover:bg-white/15 transition-all group"
                             >
                                 <svg className="w-6 h-6 text-red-500 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" /></svg>
                                 <span className="font-semibold">Tonton Video Tutorial</span>

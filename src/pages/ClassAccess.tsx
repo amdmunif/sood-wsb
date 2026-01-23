@@ -21,7 +21,7 @@ const ClassAccess: React.FC = () => {
     );
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-brand-900 via-brand-700 to-indigo-900 font-sans flex flex-col">
+        <div className="min-h-screen bg-linear-to-br from-gray-900 via-brand-900 to-indigo-950 font-sans flex flex-col">
             <Navbar />
 
             <main className="flex-grow max-w-7xl mx-auto w-full py-12 px-4 sm:px-6 lg:px-8">
@@ -38,7 +38,7 @@ const ClassAccess: React.FC = () => {
                     <input
                         type="text"
                         placeholder="Cari nama PKBM..."
-                        className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-md shadow-lg transition-all"
+                        className="w-full px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-md shadow-lg transition-all"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
@@ -60,7 +60,7 @@ const ClassAccess: React.FC = () => {
                 {!loading && !error && (
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {filteredPkbms.length > 0 ? filteredPkbms.map((pkbm) => (
-                            <div key={pkbm.id} className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 p-6 flex flex-col justify-between hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-1">
+                            <div key={pkbm.id} className="bg-black/20 backdrop-blur-md rounded-2xl shadow-xl border border-white/10 p-6 flex flex-col justify-between hover:bg-black/30 transition-all duration-300 transform hover:-translate-y-1 group">
                                 <div>
                                     <h3 className="text-xl font-bold text-white mb-2">{pkbm.name}</h3>
                                     <p className="text-sm text-blue-200 font-light leading-relaxed mb-4">{pkbm.address}</p>

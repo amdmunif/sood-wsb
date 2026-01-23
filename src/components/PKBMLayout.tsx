@@ -20,9 +20,9 @@ const PKBMLayout: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-brand-900 via-brand-700 to-indigo-900 flex font-sans">
+        <div className="min-h-screen bg-linear-to-br from-gray-900 via-brand-900 to-indigo-950 flex font-sans text-white">
             {/* Sidebar */}
-            <aside className="w-64 bg-white/10 backdrop-blur-lg border-r border-white/20 flex-shrink-0 hidden md:flex flex-col text-white">
+            <aside className="w-64 bg-black/20 backdrop-blur-xl border-r border-white/10 flex-shrink-0 hidden md:flex flex-col">
                 <div className="p-6 border-b border-white/20">
                     <h1 className="text-xl font-bold tracking-tight">Admin PKBM</h1>
                     {user?.pkbm_name && (

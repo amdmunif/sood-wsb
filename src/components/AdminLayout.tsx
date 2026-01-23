@@ -67,9 +67,9 @@ const AdminLayout: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-brand-900 via-brand-700 to-indigo-900 flex font-sans text-white">
+        <div className="min-h-screen bg-linear-to-br from-gray-900 via-brand-900 to-indigo-950 flex font-sans text-white">
             {/* Sidebar */}
-            <aside className="w-64 bg-white/10 backdrop-blur-lg border-r border-white/20 flex-shrink-0 hidden md:flex flex-col">
+            <aside className="w-64 bg-black/20 backdrop-blur-xl border-r border-white/10 flex-shrink-0 hidden md:flex flex-col">
                 <div className="h-16 flex items-center px-6 border-b border-white/20">
                     <SoodLogo className="w-8 h-8 mr-3" logoUrl={settings?.logo_url} />
                     <span className="text-xl font-bold tracking-tight">SOOD</span>

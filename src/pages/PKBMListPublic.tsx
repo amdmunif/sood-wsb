@@ -29,14 +29,14 @@ const PKBMListPublic: React.FC = () => {
     );
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-brand-900 via-brand-700 to-indigo-900 font-sans">
+        <div className="min-h-screen bg-linear-to-br from-gray-900 via-brand-900 to-indigo-950 font-sans">
             <Navbar />
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h1 className="text-3xl font-extrabold text-white sm:text-4xl tracking-tight">
                         Daftar PKBM Mitra
                     </h1>
-                    <p className="mt-3 max-w-2xl mx-auto text-xl text-blue-100 sm:mt-4">
+                    <p className="mt-3 max-w-2xl mx-auto text-xl text-blue-100 sm:mt-4 opacity-80">
                         Temukan Pusat Kegiatan Belajar Masyarakat terdekat di Wonosobo.
                     </p>
                 </div>
@@ -46,12 +46,12 @@ const PKBMListPublic: React.FC = () => {
                         <input
                             type="text"
                             placeholder="Cari PKBM berdasarkan nama atau alamat..."
-                            className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-md shadow-lg"
+                            className="w-full px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-md shadow-lg transition-all"
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
                         />
                         <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
-                            <svg className="h-6 w-6 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
                         </div>
@@ -59,11 +59,11 @@ const PKBMListPublic: React.FC = () => {
                 </div>
 
                 {loading ? (
-                    <div className="text-center text-white">Loading...</div>
+                    <div className="text-center text-white text-lg animate-pulse">Loading...</div>
                 ) : (
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {filteredPkbms.map((pkbm) => (
-                            <div key={pkbm.id} className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:bg-white/15 transition-all duration-300">
+                            <div key={pkbm.id} className="bg-black/20 backdrop-blur-md rounded-2xl shadow-xl border border-white/10 overflow-hidden hover:bg-black/30 transition-all duration-300 group">
                                 <div className="p-6">
                                     <div className="flex justify-between items-start mb-4">
                                         <h3 className="text-xl font-bold text-white">{pkbm.name}</h3>

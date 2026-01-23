@@ -38,9 +38,9 @@ const LandingSettingsPage: React.FC = () => {
     if (!settings) return <div>Loading...</div>;
 
     return (
-        <div>
-            <h1 className="text-2xl font-bold mb-6">Pengaturan Halaman Depan</h1>
-            <div className="bg-white shadow rounded-lg p-6 max-w-2xl">
+        <div className="text-gray-900">
+            <h1 className="text-2xl font-bold mb-6 text-white">Pengaturan Halaman Depan</h1>
+            <div className="bg-white/95 backdrop-blur shadow-xl rounded-2xl p-8 max-w-2xl border border-white/20">
                 <form onSubmit={handleSubmit} className="space-y-6">
                     {/* Hero Section */}
                     <div className="border-b pb-4">
