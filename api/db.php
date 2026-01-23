@@ -16,15 +16,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 
 // Mulai session untuk login
 if (session_status() === PHP_SESSION_NONE) {
-    // Set cookie parameters to support cross-site/same-site consistently
-    $cookieParams = session_get_cookie_params();
+    // Determine if HTTPS is used
+    $isSecure = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on';
+
+    // Set cookie parameters
     session_set_cookie_params([
         'lifetime' => 86400, // 1 day
         'path' => '/',
-        'domain' => '', // Current domain
-        'secure' => true, // Always secure (HTTPS)
+        // 'domain' => '', // Let browser handle domain automatically (safer for subdomains/localhost)
+        'secure' => $isSecure, // Only secure if HTTPS
         'httponly' => true,
-        'samesite' => 'None' // Critical for cross-origin or strict browser policies
+        'samesite' => $isSecure ? 'None' : 'Lax' // None requires Secure. Fallback to Lax if HTTP.
     ]);
     session_start();
 }
