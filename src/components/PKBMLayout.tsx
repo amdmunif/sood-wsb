@@ -20,13 +20,13 @@ const PKBMLayout: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50 flex">
+        <div className="min-h-screen bg-linear-to-br from-brand-900 via-brand-700 to-indigo-900 flex font-sans">
             {/* Sidebar */}
-            <aside className="w-64 bg-white shadow-md flex-shrink-0 hidden md:flex flex-col">
-                <div className="p-6 border-b">
-                    <h1 className="text-xl font-bold text-gray-800">Admin PKBM</h1>
+            <aside className="w-64 bg-white/10 backdrop-blur-lg border-r border-white/20 flex-shrink-0 hidden md:flex flex-col text-white">
+                <div className="p-6 border-b border-white/20">
+                    <h1 className="text-xl font-bold tracking-tight">Admin PKBM</h1>
                     {user?.pkbm_name && (
-                        <p className="text-sm text-gray-500 mt-1">{user.pkbm_name}</p>
+                        <p className="text-sm text-blue-200 mt-1">{user.pkbm_name}</p>
                     )}
                 </div>
                 <nav className="flex-1 p-4 space-y-1">
@@ -34,19 +34,19 @@ const PKBMLayout: React.FC = () => {
                         <Link
                             key={item.path}
                             to={item.path}
-                            className={`block px-4 py-2 rounded-md transition-colors ${location.pathname.startsWith(item.path)
-                                ? 'bg-blue-50 text-blue-700 font-medium'
-                                : 'text-gray-600 hover:bg-gray-100'
+                            className={`block px-4 py-2 rounded-lg transition-all duration-200 ${location.pathname.startsWith(item.path)
+                                ? 'bg-white/20 text-white font-semibold shadow-inner'
+                                : 'text-blue-100 hover:bg-white/10 hover:text-white'
                                 }`}
                         >
                             {item.label}
                         </Link>
                     ))}
                 </nav>
-                <div className="p-4 border-t">
+                <div className="p-4 border-t border-white/20">
                     <button
                         onClick={handleLogout}
-                        className="w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 rounded-md transition-colors"
+                        className="w-full text-left px-4 py-2 text-red-300 hover:bg-red-500/20 hover:text-red-100 rounded-lg transition-colors"
                     >
                         Keluar
                     </button>
@@ -55,7 +55,9 @@ const PKBMLayout: React.FC = () => {
 
             {/* Main Content */}
             <main className="flex-1 p-8 overflow-y-auto">
-                <Outlet />
+                <div className="max-w-7xl mx-auto">
+                    <Outlet />
+                </div>
             </main>
         </div>
     );
