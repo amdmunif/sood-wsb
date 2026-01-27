@@ -53,36 +53,35 @@ const LoginPage: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-brand-900 via-brand-700 to-indigo-900 flex flex-col font-sans">
+    return (
+        <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
             <Navbar />
 
             <div className="flex-grow flex items-center justify-center p-4">
-                <div className="w-full max-w-md bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-2xl overflow-hidden p-8 sm:p-10 relative">
+                <div className="w-full max-w-md bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden p-8 sm:p-10 relative">
                     {/* Decorative Elements */}
-                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-purple-500"></div>
-                    <div className="absolute -top-10 -right-10 w-32 h-32 bg-blue-500/30 rounded-full blur-2xl"></div>
-                    <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-500/30 rounded-full blur-2xl"></div>
+                    <div className="absolute top-0 left-0 w-full h-2 bg-brand-600"></div>
 
                     <div className="relative z-10">
                         <div className="text-center mb-10">
-                            <h2 className="text-3xl font-bold text-white tracking-tight">
+                            <h2 className="text-3xl font-bold text-slate-900 tracking-tight">
                                 Selamat Datang
                             </h2>
-                            <p className="mt-2 text-blue-100">
+                            <p className="mt-2 text-slate-600">
                                 Masuk untuk mengakses akun Anda
                             </p>
                         </div>
 
                         {error && (
-                            <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-4 mb-6 backdrop-blur-sm">
+                            <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
                                 <div className="flex">
                                     <div className="flex-shrink-0">
-                                        <svg className="h-5 w-5 text-red-200" viewBox="0 0 20 20" fill="currentColor">
+                                        <svg className="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                                         </svg>
                                     </div>
                                     <div className="ml-3">
-                                        <p className="text-sm text-red-100">{error}</p>
+                                        <p className="text-sm text-red-600">{error}</p>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +89,7 @@ const LoginPage: React.FC = () => {
 
                         <form className="space-y-6" onSubmit={handleSubmit}>
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-blue-100 mb-1">
+                                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
                                     Email
                                 </label>
                                 <input
@@ -98,7 +97,7 @@ const LoginPage: React.FC = () => {
                                     name="email"
                                     type="email"
                                     required
-                                    className="block w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-200 sm:text-sm"
+                                    className="block w-full px-4 py-3 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition duration-200 sm:text-sm"
                                     placeholder="nama@email.com"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -106,7 +105,7 @@ const LoginPage: React.FC = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="password" className="block text-sm font-medium text-blue-100 mb-1">
+                                <label htmlFor="password" className="block text-sm font-medium text-slate-700 mb-1">
                                     Password
                                 </label>
                                 <input
@@ -114,7 +113,7 @@ const LoginPage: React.FC = () => {
                                     name="password"
                                     type="password"
                                     required
-                                    className="block w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-200 sm:text-sm"
+                                    className="block w-full px-4 py-3 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition duration-200 sm:text-sm"
                                     placeholder="••••••••"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
@@ -124,7 +123,7 @@ const LoginPage: React.FC = () => {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
+                                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 transform hover:-translate-y-0.5"
                             >
                                 {isSubmitting ? (
                                     <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
