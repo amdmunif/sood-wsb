@@ -6,16 +6,7 @@ import type { LandingSettings } from '../services/landingService';
 export const Footer: React.FC<{ settings: LandingSettings | null }> = ({ settings }) => (
     <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-12 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-                <h2 className="text-slate-900 font-bold text-lg mb-6">Beberapa Instansi Pemerintahan dan Perangkat Daerah tergabung dalam layanan ini</h2>
-                <div className="flex justify-center gap-6 items-center flex-wrap">
-                    {/* Placeholder for Logos - You can replace these with actual images/components if available */}
-                    <div className="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-xs text-slate-500">Logo 1</div>
-                    <div className="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-xs text-slate-500">Logo 2</div>
-                    <div className="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-xs text-slate-500">Logo 3</div>
-                    <div className="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-xs text-slate-500">Logo 4</div>
-                </div>
-            </div>
+            {/* Partners section removed as requested */}
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 border-t border-slate-200">
                 <div>
