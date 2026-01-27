@@ -32,9 +32,9 @@ export const Footer: React.FC<{ settings: LandingSettings | null }> = ({ setting
                 <div>
                     <h3 className="font-bold text-slate-900 mb-4">Link Terkait</h3>
                     <ul className="space-y-2 text-sm text-slate-500">
-                        <li><a href="#" className="hover:text-brand-600">Portal Pemerintah Kab. Wonosobo</a></li>
-                        <li><a href="#" className="hover:text-brand-600">Dinas Pendidikan dan Kebudayaan</a></li>
-                        <li><a href="#" className="hover:text-brand-600">Kemendikbud</a></li>
+                        <li><a href="https://website.wonosobokab.go.id/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600">Portal Pemerintah Kab. Wonosobo</a></li>
+                        <li><a href="https://dikpora.wonosobokab.go.id/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600">Disdikpora Kab. Wonosobo</a></li>
+                        <li><a href="https://kemendikdasmen.go.id/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600">Kemendikdasmen</a></li>
                     </ul>
                 </div>
             </div>

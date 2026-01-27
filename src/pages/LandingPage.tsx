@@ -64,7 +64,7 @@ const LandingPage: React.FC = () => {
                             className="text-left"
                         >
                             <span className="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-sm font-bold mb-6 tracking-wide">
-                                🎓 RESMI PEMERINTAH KAB. WONOSOBO
+                                🎓 PEMERINTAH KAB. WONOSOBO
                             </span>
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
                                 {settings?.hero_title || 'Sekolah Online Orang Dewasa'}
