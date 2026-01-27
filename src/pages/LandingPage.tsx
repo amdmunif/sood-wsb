@@ -254,27 +254,28 @@ const LandingPage: React.FC = () => {
             )}
 
             {/* CTA Login Section */}
-            <section className="py-20 px-4">
-                <div className="max-w-5xl mx-auto bg-brand-600 rounded-3xl p-10 sm:p-16 text-center shadow-2xl relative overflow-hidden">
-                    <div className="relative z-10">
-                        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
-                            Siap memulai perjalanan pendidikan Anda?
-                        </h2>
-                        <p className="text-brand-100 text-lg mb-10 max-w-2xl mx-auto">
-                            Daftar sekarang dan raih masa depan yang lebih cerah bersama Sekolah Online Orang Dewasa.
-                        </p>
-                        <Link
-                            to="/login"
-                            className="inline-block bg-white text-brand-700 font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl hover:bg-brand-50 transition-all transform hover:-translate-y-1"
-                        >
-                            Mulai Sekarang
-                        </Link>
-                    </div>
+            <section className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="bg-brand-600 rounded-3xl p-10 sm:p-16 text-center shadow-xl relative overflow-hidden">
+                        <div className="relative z-10">
+                            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
+                                Siap memulai perjalanan pendidikan Anda?
+                            </h2>
+                            <p className="text-brand-100 text-lg mb-10 max-w-2xl mx-auto">
+                                Daftar sekarang dan raih masa depan yang lebih cerah bersama Sekolah Online Orang Dewasa.
+                            </p>
+                            <Link
+                                to="/login"
+                                className="inline-block bg-white text-brand-700 font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl hover:bg-brand-50 transition-all transform hover:-translate-y-1"
+                            >
+                                Mulai Sekarang
+                            </Link>
+                        </div>
 
-                    {/* Decorative circles */}
-                    <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-64 h-64 bg-white opacity-10 rounded-full"></div>
-                    <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/3 w-64 h-64 bg-white opacity-10 rounded-full"></div>
-                </div>
+                        {/* Decorative circles */}
+                        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-64 h-64 bg-white opacity-10 rounded-full"></div>
+                        <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/3 w-64 h-64 bg-white opacity-10 rounded-full"></div>
+                    </div>
             </section>
 
             <Footer settings={settings} />
