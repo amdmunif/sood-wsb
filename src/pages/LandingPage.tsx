@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { MagnifyingGlassIcon, ArrowRightIcon, TrophyIcon, ClipboardDocumentCheckIcon, ChartBarIcon, CalendarDaysIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, TrophyIcon, ClipboardDocumentCheckIcon, ChartBarIcon, CalendarDaysIcon } from '@heroicons/react/24/outline';
 import Navbar from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { landingService } from '../services/landingService';
