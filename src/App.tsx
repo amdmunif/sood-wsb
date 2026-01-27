@@ -31,14 +31,16 @@ function App() {
         const settings = await landingService.getSettings();
         if (settings) {
           // Prefer settings title, but fallback to specific request if settings empty or just use the specific one if user insists
-          // User requested: "SOOD Wonosobo | Sekolah Online Orang Dewasa"
-          document.title = settings.hero_title ? `${settings.hero_title} | SOOD Wonosobo` : 'SOOD Wonosobo | Sekolah Online Orang Dewasa';
-          if (settings.favicon_url) {
+          // User requested: "Sekolah Online Orang Dewasa | SOOD"
+          document.title = settings.hero_title ? `${settings.hero_title} | SOOD` : 'Sekolah Online Orang Dewasa | SOOD';
+
+          const iconUrl = settings.favicon_url || settings.logo_url;
+          if (iconUrl) {
             const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
             if (link) {
-              link.href = settings.favicon_url.startsWith('http')
-                ? settings.favicon_url
-                : `${API_BASE_URL}${settings.favicon_url}`;
+              link.href = iconUrl.startsWith('http')
+                ? iconUrl
+                : `${API_BASE_URL}${iconUrl}`;
             }
           }
         }

@@ -94,7 +94,7 @@ const PKBMListPublic: React.FC = () => {
                                                 href={`https://wa.me/${pkbm.contactPerson.phone.replace(/^0/, '62').replace(/\D/g, '')}`}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="flex-1 bg-green-600 text-white text-center py-2.5 rounded-xl hover:bg-green-700 transition shadow-sm text-sm font-semibold flex items-center justify-center gap-2"
+                                                className="flex-1 bg-brand-600 text-white text-center py-2.5 rounded-xl hover:bg-brand-700 transition shadow-sm text-sm font-semibold flex items-center justify-center gap-2"
                                             >
                                                 <span>WhatsApp</span>
                                             </a>
